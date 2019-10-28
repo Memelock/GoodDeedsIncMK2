@@ -15,7 +15,7 @@ public class Dessition{
 public class Option {
     public string Name;
     public int DeathsCaused, Moneyadded;
-
+    public int company, company1, company2, company3;
 }
 public class GameEngine : MonoBehaviour
 {
@@ -44,20 +44,24 @@ public class GameEngine : MonoBehaviour
         Current = dessitions[Rand()] ;
     }
 
-    public void Select(int selector,int company,int company1,int company2,int company3)
+    public void Select(int selector)
     {
         if (selector==1) {
             Money += Current.A.Moneyadded;
             Deaths += Current.A.DeathsCaused;
-            C += company;
-            C1 += company1;
-            C2 += company2;
-            C3 += company3;
+            C += Current.A.company;
+            C1 += Current.A.company1;
+            C2 += Current.A.company2;
+            C3 += Current.A.company3;
         }
         if (selector ==2)
         {
             Money += Current.B.Moneyadded;
             Deaths += Current.B.DeathsCaused;
+            C += Current.B.company;
+            C1 += Current.B.company1;
+            C2 += Current.B.company2;
+            C3 += Current.B.company3;
         }
         New();
     }
