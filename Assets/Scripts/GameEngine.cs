@@ -11,18 +11,29 @@ public class Dessition{
 
 }
 
+
+[System.Serializable]
+public class GoodWillOptions
+{
+    public string Name;
+    public int GWM;
+    public int Cost;
+}
+
 [System.Serializable]
 public class Option {
     public string Name;
-    public int DeathsCaused, Moneyadded;
+    public int DeathsCaused, Moneyadded,GDA;
     public int company, company1, company2, company3;
 }
 public class GameEngine : MonoBehaviour
 {
     [SerializeField] List<Dessition> dessitions = new List<Dessition>();
-    public int Money, Deaths;
-    public Text describtion, optiona, optionb, MT,Dealths;
+    [SerializeField] List<GoodWillOptions> GWO = new List<GoodWillOptions>();
+    public int Money, Deaths, GoodWill;
+    public Text describtion, optiona, optionb, MT, Dealths, GWON;
     public Dessition Current;
+    public GoodWillOptions CurrentGWO;
     public int C, C1, C2, C3;
     public Slider com, com1, com2, com3;
     int past;
@@ -36,18 +47,22 @@ public class GameEngine : MonoBehaviour
         com3.maxValue = 100;
     }
     public int Rand() {
-       int r= Random.Range(0, dessitions.Count);
+        int r = Random.Range(0, dessitions.Count);
 
         return r;
     }
     public void New() {
-        Current = dessitions[Rand()] ;
+        Current = dessitions[Rand()];
+    }
+    void new2(){
+        CurrentGWO = GWO[Rand()];
     }
 
     public void Select(int selector)
     {
         if (selector==1) {
             Money += Current.A.Moneyadded;
+            GoodWill += Current.A.GDA;
             Deaths += Current.A.DeathsCaused;
             C += Current.A.company;
             C1 += Current.A.company1;
@@ -56,6 +71,7 @@ public class GameEngine : MonoBehaviour
         }
         if (selector ==2)
         {
+            GoodWill += Current.B.GDA;
             Money += Current.B.Moneyadded;
             Deaths += Current.B.DeathsCaused;
             C += Current.B.company;
@@ -65,13 +81,23 @@ public class GameEngine : MonoBehaviour
         }
         New();
     }
-    // Update is called once per frame
-    void Update()
+    public void Select2()
+    {
+        if (Money >= CurrentGWO.Cost) {
+            GoodWill += CurrentGWO.GWM;
+            Money -= CurrentGWO.Cost;
+
+            new2();
+        }
+    }
+        // Update is called once per frame
+        void Update()
     {
         com.value = C;
         com1.value = C1;
         com2.value = C2;
         com3.value = C3;
+        GWON.text = CurrentGWO.Name;
         describtion.text = Current.Description;
         optiona.text = Current.A.Name;
         optionb.text = Current.B.Name;
