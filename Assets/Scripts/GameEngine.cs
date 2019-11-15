@@ -24,7 +24,7 @@ public class GoodWillOptions
 public class Option {
     public string Name;
     public int DeathsCaused, Moneyadded,GDA;
-    public int company, company1, company2, company3;
+    public int MCdoogles, Wrecking_Crew, Political_Campaign, Child_Slave_Mine;
 }
 public class GameEngine : MonoBehaviour
 {
@@ -64,20 +64,20 @@ public class GameEngine : MonoBehaviour
             Money += Current.A.Moneyadded;
             GoodWill += Current.A.GDA;
             Deaths += Current.A.DeathsCaused;
-            C += Current.A.company;
-            C1 += Current.A.company1;
-            C2 += Current.A.company2;
-            C3 += Current.A.company3;
+            C += Current.A.MCdoogles;
+            C1 += Current.A.Wrecking_Crew;
+            C2 += Current.A.Political_Campaign;
+            C3 += Current.A.Child_Slave_Mine;
         }
         if (selector ==2)
         {
             GoodWill += Current.B.GDA;
             Money += Current.B.Moneyadded;
             Deaths += Current.B.DeathsCaused;
-            C += Current.B.company;
-            C1 += Current.B.company1;
-            C2 += Current.B.company2;
-            C3 += Current.B.company3;
+            C += Current.B.MCdoogles;
+            C1 += Current.B.Wrecking_Crew;
+            C2 += Current.B.Political_Campaign;
+            C3 += Current.B.Child_Slave_Mine;
         }
         New();
     }

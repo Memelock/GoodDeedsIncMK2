@@ -2429,42 +2429,119 @@ MonoBehaviour:
   dessitions:
   - Description: Orphanage where you want to build a highrise
     A:
-      Name: Build what you want
+      Name: Destroy the Orphanage
       DeathsCaused: 10
-      Moneyadded: 1000
-      GDA: 0
-      company: 0
-      company1: 2
-      company2: 0
-      company3: 5
+      Moneyadded: -1000
+      GDA: -3
+      MCdoogles: -1
+      Wrecking_Crew: 1
+      Political_Campaign: -2
+      Child_Slave_Mine: 2
     B:
-      Name: Do not build
+      Name: Let the Orphanage be
       DeathsCaused: 0
       Moneyadded: 0
-      GDA: 0
-      company: 0
-      company1: 0
-      company2: 0
-      company3: 0
+      GDA: 3
+      MCdoogles: 2
+      Wrecking_Crew: -1
+      Political_Campaign: 2
+      Child_Slave_Mine: -2
+  - Description: The Child Employment Mine has Collapsed, revealing valuable Diamonds
+    A:
+      Name: Save Orphan Workforce
+      DeathsCaused: 0
+      Moneyadded: 0
+      GDA: 3
+      MCdoogles: 0
+      Wrecking_Crew: 0
+      Political_Campaign: 3
+      Child_Slave_Mine: 4
+    B:
+      Name: Rescue the Diamonds
+      DeathsCaused: 200
+      Moneyadded: 2000
+      GDA: -3
+      MCdoogles: -1
+      Wrecking_Crew: 0
+      Political_Campaign: -1
+      Child_Slave_Mine: -5
+  - Description: A local university is organizing a hackathon
+    A:
+      Name: Sponsor Hackathon
+      DeathsCaused: 0
+      Moneyadded: -1000
+      GDA: 2
+      MCdoogles: 2
+      Wrecking_Crew: 0
+      Political_Campaign: 1
+      Child_Slave_Mine: -2
+    B:
+      Name: Pass out company applications
+      DeathsCaused: 0
+      Moneyadded: -500
+      GDA: -3
+      MCdoogles: 1
+      Wrecking_Crew: 1
+      Political_Campaign: -2
+      Child_Slave_Mine: 1
+  - Description: Wrecking Co. requests TNT for their projects, buy High quality TNT
+      or some that you cousin Earl made in his backyard
+    A:
+      Name: Quality Product
+      DeathsCaused: 5
+      Moneyadded: -2500
+      GDA: 2
+      MCdoogles: 0
+      Wrecking_Crew: 3
+      Political_Campaign: 1
+      Child_Slave_Mine: 0
+    B:
+      Name: Earl's Boomsticks
+      DeathsCaused: 300
+      Moneyadded: -500
+      GDA: -2
+      MCdoogles: -1
+      Wrecking_Crew: 2
+      Political_Campaign: -1
+      Child_Slave_Mine: 0
   - Description: Mine calabed
     A:
       Name: save orphans
       DeathsCaused: 0
       Moneyadded: 0
       GDA: 0
-      company: 0
-      company1: 0
-      company2: 0
-      company3: 0
+      MCdoogles: 0
+      Wrecking_Crew: 0
+      Political_Campaign: 0
+      Child_Slave_Mine: 0
     B:
       Name: diamonds
       DeathsCaused: 200
       Moneyadded: 2000
       GDA: 0
-      company: 0
-      company1: 0
-      company2: 0
-      company3: 0
+      MCdoogles: 0
+      Wrecking_Crew: 0
+      Political_Campaign: 0
+      Child_Slave_Mine: 0
+  - Description: Mine calabed
+    A:
+      Name: save orphans
+      DeathsCaused: 0
+      Moneyadded: 0
+      GDA: 0
+      MCdoogles: 0
+      Wrecking_Crew: 0
+      Political_Campaign: 0
+      Child_Slave_Mine: 0
+    B:
+      Name: diamonds
+      DeathsCaused: 200
+      Moneyadded: 2000
+      GDA: 0
+      MCdoogles: 0
+      Wrecking_Crew: 0
+      Political_Campaign: 0
+      Child_Slave_Mine: 0
   GWO:
   - Name: Sponser event
     GWM: 10
@@ -2491,19 +2568,19 @@ MonoBehaviour:
       DeathsCaused: 0
       Moneyadded: 0
       GDA: 0
-      company: 0
-      company1: 0
-      company2: 0
-      company3: 0
+      MCdoogles: 0
+      Wrecking_Crew: 0
+      Political_Campaign: 0
+      Child_Slave_Mine: 0
     B:
       Name: 
       DeathsCaused: 0
       Moneyadded: 0
       GDA: 0
-      company: 0
-      company1: 0
-      company2: 0
-      company3: 0
+      MCdoogles: 0
+      Wrecking_Crew: 0
+      Political_Campaign: 0
+      Child_Slave_Mine: 0
   CurrentGWO:
     Name: 
     GWM: 0
