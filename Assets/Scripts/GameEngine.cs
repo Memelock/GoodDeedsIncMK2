@@ -26,7 +26,8 @@ public class GameEngine : MonoBehaviour
     [SerializeField] List<Dessition> dessitions = new List<Dessition>();
     [SerializeField] List<GoodWillOptions> GWO = new List<GoodWillOptions>();
     public int Money, Deaths, GoodWill;
-    public Text describtion, optiona, optionb, MT, Dealths, GWON, GW1, GW2, GW3;
+    public int roulet_spins = 0;
+    public Text describtion, optiona, optionb, MT, Dealths, GWON, GW1, GW2, GW3, roulet;
     Dessition Current;
     GoodWillOptions GoodWillCurent1, GoodWillCurent2, GoodWillCurent3;
     GoodWillOptions[] GWOS;
@@ -123,10 +124,22 @@ public class GameEngine : MonoBehaviour
         GW3.text = GoodWillCurent3.Name + " $ " + GoodWillCurent3.Cost;
         optiona.text = Current.A.Name +" $ " + Current.A.Moneyadded;
         optionb.text = Current.B.Name + " $ " + Current.B.Moneyadded;
+        roulet.text = "PR Research $" + Roulet_Cost();
         MT.text = Money.ToString();
         Dealths.text = Deaths.ToString();
 
     }
+    private int Roulet_detecter()
+    {
+
+    }
+    private int Roulet_Cost()
+    {
+        int cost = roulet_spins * 500 + 500;
+        roulet_spins++;
+        return cost;
+    }
+
     private void OnMouseEnter()
     {
         print("test");
