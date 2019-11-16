@@ -453,7 +453,7 @@ RectTransform:
   m_Children:
   - {fileID: 662777505}
   m_Father: {fileID: 632290625}
-  m_RootOrder: 1
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -503,12 +503,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 6321b1091b8678f4e8f6bc5bb03f5356, type: 3}
-        m_MethodName: 
+      - m_Target: {fileID: 1029863015}
+        m_MethodName: Roulet_detecter
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1771,7 +1771,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 3.8, y: 2.0749998}
+  m_AnchoredPosition: {x: 3.800003, y: 2.0749998}
   m_SizeDelta: {x: -45.4, y: -4.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &629401728
@@ -1916,10 +1916,10 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 244876152}
-  - {fileID: 248133151}
   - {fileID: 1433846938}
   - {fileID: 829394368}
   - {fileID: 1263516156}
+  - {fileID: 248133151}
   m_Father: {fileID: 1883834967}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2432,7 +2432,7 @@ RectTransform:
   m_Children:
   - {fileID: 1998374615}
   m_Father: {fileID: 632290625}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2483,7 +2483,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1029863015}
-        m_MethodName: Select2
+        m_MethodName: Disable_Button2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2913,6 +2913,7 @@ MonoBehaviour:
   Money: 5
   Deaths: 0
   GoodWill: 0
+  roulet_spins: 0
   describtion: {fileID: 360659807}
   optiona: {fileID: 1129866782}
   optionb: {fileID: 505954904}
@@ -2922,6 +2923,7 @@ MonoBehaviour:
   GW1: {fileID: 629401729}
   GW2: {fileID: 1998374617}
   GW3: {fileID: 1615558906}
+  roulet: {fileID: 662777506}
   C: 0
   C1: 2
   C2: 0
@@ -2930,6 +2932,9 @@ MonoBehaviour:
   com1: {fileID: 2139205053}
   com2: {fileID: 1996196596}
   com3: {fileID: 114783694}
+  Good_Boi_Selected: {fileID: 1433846937}
+  Good_Boi_Selected2: {fileID: 829394367}
+  Good_Boi_Selected3: {fileID: 1263516155}
 --- !u!4 &1029863016
 Transform:
   m_ObjectHideFlags: 0
@@ -3251,7 +3256,7 @@ RectTransform:
   m_Children:
   - {fileID: 1615558904}
   m_Father: {fileID: 632290625}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3302,7 +3307,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1029863015}
-        m_MethodName: Select2
+        m_MethodName: Disable_Button3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3599,7 +3604,7 @@ RectTransform:
   m_Children:
   - {fileID: 629401727}
   m_Father: {fileID: 632290625}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3630,7 +3635,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.2735849, g: 0.2735849, b: 0.2735849, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -3650,7 +3655,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1029863015}
-        m_MethodName: Select2
+        m_MethodName: Disable_Button1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3805,7 +3810,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 2.3, y: 2.05}
+  m_AnchoredPosition: {x: 2.300003, y: 2.0500002}
   m_SizeDelta: {x: -45.4, y: -4.0999985}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1615558905

@@ -34,6 +34,7 @@ public class GameEngine : MonoBehaviour
     public int C, C1, C2, C3;
     public Slider com, com1, com2, com3;
     int past;
+    public GameObject Good_Boi_Selected, Good_Boi_Selected2, Good_Boi_Selected3;
     // Start is called before the first frame update
     void Start()
     {
@@ -100,17 +101,34 @@ public class GameEngine : MonoBehaviour
         }
         New();
     }
-//    public void Select2()
-   // {
-        //Current2 = GWO[Rand_GoodWill()];
-       // print(Current2.Name);
-      //  if (Money >= Current2.Cost)
-     //  {
-     //       GoodWill += Current2.GWM;
-     //       Money -= Current2.Cost;
-            //new2();
-    //    }
-  //  }
+    public void Disable_Button1()
+    {
+        if (Money >= GoodWillCurent1.Cost)
+        {
+            Money -= GoodWillCurent1.Cost;
+            GoodWill += GoodWillCurent1.GWM;
+            Good_Boi_Selected.SetActive(false);
+        }
+    }
+    public void Disable_Button2()
+    {
+        if (Money >= GoodWillCurent2.Cost)
+        {
+            Money -= GoodWillCurent2.Cost;
+            GoodWill += GoodWillCurent2.GWM;
+            Good_Boi_Selected2.SetActive(false);
+        }
+    }
+    public void Disable_Button3()
+    {
+        if (Money >= GoodWillCurent3.Cost)
+        {
+            Money -= GoodWillCurent3.Cost;
+            GoodWill += GoodWillCurent3.GWM;
+            Good_Boi_Selected3.SetActive(false);
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -129,14 +147,22 @@ public class GameEngine : MonoBehaviour
         Dealths.text = Deaths.ToString();
 
     }
-    private int Roulet_detecter()
+    public void Roulet_detecter()
     {
+        if (Money >= Roulet_Cost())
+        {
+            Money -= Roulet_Cost();
+            GoodWillReroll();
+            Good_Boi_Selected.SetActive(true);
+            Good_Boi_Selected2.SetActive(true);
+            Good_Boi_Selected3.SetActive(true);
 
+            roulet_spins++;
+        }
     }
     private int Roulet_Cost()
     {
         int cost = roulet_spins * 500 + 500;
-        roulet_spins++;
         return cost;
     }
 
