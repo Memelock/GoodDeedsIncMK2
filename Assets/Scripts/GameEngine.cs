@@ -25,9 +25,9 @@ public class GameEngine : MonoBehaviour
 {
     [SerializeField] List<Dessition> dessitions = new List<Dessition>();
     [SerializeField] List<GoodWillOptions> GWO = new List<GoodWillOptions>();
-    public int Money, Deaths, GoodWill;
+    public int Money, Deaths, GoodWill, Turn_Count, Starting_Money, Starting_Goodwill;
     public int roulet_spins = 0;
-    public Text describtion, optiona, optionb, MT, Dealths, GWON, GW1, GW2, GW3, roulet;
+    public Text describtion, optiona, optionb, MT, Dealths, GWON, GW1, GW2, GW3, roulet, Turn_Display, GoodWill_Display;
     Dessition Current;
     GoodWillOptions GoodWillCurent1, GoodWillCurent2, GoodWillCurent3;
     GoodWillOptions[] GWOS;
@@ -44,6 +44,8 @@ public class GameEngine : MonoBehaviour
         com1.maxValue = 100;
         com2.maxValue = 100;
         com3.maxValue = 100;
+        Money = Starting_Money;
+        GoodWill = Starting_Goodwill;
     }
     public int Rand_Des()
     {
@@ -75,7 +77,7 @@ public class GameEngine : MonoBehaviour
         {
             GoodWillCurent3 = GWO[Rand_GoodWill()];
         }
-
+        Turn_Count++;  // Put to Vote, maybe free action
     }
     public void Select(int selector)
     {
@@ -99,6 +101,7 @@ public class GameEngine : MonoBehaviour
             C2 += Current.B.Political_Campaign;
             C3 += Current.B.Child_Slave_Mine;
         }
+        Turn_Count++;
         New();
     }
     public void Disable_Button1()
@@ -108,6 +111,7 @@ public class GameEngine : MonoBehaviour
             Money -= GoodWillCurent1.Cost;
             GoodWill += GoodWillCurent1.GWM;
             Good_Boi_Selected.SetActive(false);
+            Turn_Count++;
         }
     }
     public void Disable_Button2()
@@ -117,6 +121,7 @@ public class GameEngine : MonoBehaviour
             Money -= GoodWillCurent2.Cost;
             GoodWill += GoodWillCurent2.GWM;
             Good_Boi_Selected2.SetActive(false);
+            Turn_Count++;
         }
     }
     public void Disable_Button3()
@@ -126,6 +131,7 @@ public class GameEngine : MonoBehaviour
             Money -= GoodWillCurent3.Cost;
             GoodWill += GoodWillCurent3.GWM;
             Good_Boi_Selected3.SetActive(false);
+            Turn_Count++;
         }
     }
 
@@ -145,6 +151,12 @@ public class GameEngine : MonoBehaviour
         roulet.text = "PR Research $" + Roulet_Cost();
         MT.text = Money.ToString();
         Dealths.text = Deaths.ToString();
+        Turn_Display.text = Turn_Count.ToString();
+        if(GoodWill > 100)
+        {
+            GoodWill = 100;
+        }
+        GoodWill_Display.text = GoodWill.ToString();
 
     }
     public void Roulet_detecter()
@@ -171,3 +183,8 @@ public class GameEngine : MonoBehaviour
         print("test");
     }
 }
+//losing = $0 0 goodwill, or 20% goodwill/$500, each with different lose screen, 
+//Winning = turn: 25 for demo
+//Goodwill on scale from 1-100
+//Starting $500 to start, will be balanced later
+//starting goodwill = 75%
