@@ -290,7 +290,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -63.404095, y: -55.991432}
+  m_AnchoredPosition: {x: -60.194, y: -45.8}
   m_SizeDelta: {x: 33.02, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &106761124
@@ -1721,7 +1721,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.47989258, y: 0}
   m_AnchorMax: {x: 0.5182861, y: 0.036427185}
-  m_AnchoredPosition: {x: -0.000015258789, y: 0}
+  m_AnchoredPosition: {x: -0.000015258789, y: 12.5}
   m_SizeDelta: {x: 5.6100006, y: 0.8699951}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &588743265
@@ -2672,7 +2672,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -51.3, y: -4.337}
+  m_AnchoredPosition: {x: -49.204, y: 2.408}
   m_SizeDelta: {x: 55, y: 27.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &867959750
@@ -2877,7 +2877,7 @@ MonoBehaviour:
       Name: Destroy the Orphanage
       DeathsCaused: 10
       Moneyadded: -1000
-      Good_Will: 0
+      Good_Will: -5
       MCdoogles: -1
       Wrecking_Crew: 1
       Political_Campaign: -2
@@ -2896,7 +2896,7 @@ MonoBehaviour:
       Name: Save Orphan Workforce
       DeathsCaused: 0
       Moneyadded: 0
-      Good_Will: 0
+      Good_Will: 3
       MCdoogles: 0
       Wrecking_Crew: 0
       Political_Campaign: 3
@@ -2905,7 +2905,7 @@ MonoBehaviour:
       Name: Rescue the Diamonds
       DeathsCaused: 200
       Moneyadded: 2000
-      Good_Will: 0
+      Good_Will: -5
       MCdoogles: -1
       Wrecking_Crew: 0
       Political_Campaign: -1
@@ -2915,7 +2915,7 @@ MonoBehaviour:
       Name: Sponsor Hackathon
       DeathsCaused: 0
       Moneyadded: -1000
-      Good_Will: 0
+      Good_Will: 2
       MCdoogles: 2
       Wrecking_Crew: 0
       Political_Campaign: 1
@@ -2924,7 +2924,7 @@ MonoBehaviour:
       Name: Pass out company applications
       DeathsCaused: 0
       Moneyadded: -500
-      Good_Will: 0
+      Good_Will: -4
       MCdoogles: 1
       Wrecking_Crew: 1
       Political_Campaign: -2
@@ -2935,7 +2935,7 @@ MonoBehaviour:
       Name: Quality Product
       DeathsCaused: 5
       Moneyadded: -2500
-      Good_Will: 0
+      Good_Will: -1
       MCdoogles: 0
       Wrecking_Crew: 3
       Political_Campaign: 1
@@ -2944,7 +2944,7 @@ MonoBehaviour:
       Name: Earl's Boomsticks
       DeathsCaused: 300
       Moneyadded: -500
-      Good_Will: 0
+      Good_Will: -2
       MCdoogles: -1
       Wrecking_Crew: 2
       Political_Campaign: -1
@@ -3024,6 +3024,7 @@ MonoBehaviour:
   Turn_Count: 0
   Starting_Money: 6900
   Starting_Goodwill: 75
+  Turn_Change: 0
   roulet_spins: 0
   describtion: {fileID: 360659807}
   optiona: {fileID: 1129866782}
@@ -3037,10 +3038,10 @@ MonoBehaviour:
   roulet: {fileID: 662777506}
   Turn_Display: {fileID: 1991473071}
   GoodWill_Display: {fileID: 106761125}
-  C: 0
-  C1: 2
-  C2: 0
-  C3: 7
+  MCDoogles_Total: 0
+  WreckingCrew_Total: 0
+  PoliticalCampaign_Total: 0
+  Child_Slave_Mine_Total: 0
   com: {fileID: 766361330}
   com1: {fileID: 2139205053}
   com2: {fileID: 1996196596}
@@ -4074,7 +4075,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -19.400002, y: -4.337001}
+  m_AnchoredPosition: {x: -57.304, y: -20.2}
   m_SizeDelta: {x: 38.8, y: 27.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1627848152
@@ -4090,7 +4091,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.05660379, g: 0.055802792, b: 0.055802792, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
