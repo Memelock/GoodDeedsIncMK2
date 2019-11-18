@@ -26,7 +26,8 @@ public class GameEngine : MonoBehaviour
 {
     [SerializeField] List<Dessition> dessitions = new List<Dessition>();
     [SerializeField] List<GoodWillOptions> GWO = new List<GoodWillOptions>();
-    public int Money, Deaths, GoodWill, Turn_Count, Starting_Money, Starting_Goodwill, Turn_Change;
+    public long Money, Deaths;
+    public int GoodWill, Turn_Count, Starting_Money, Starting_Goodwill, Turn_Change;
     public int roulet_spins = 0;
    // public Text  GWON; if anyone knows what this is, like uh say something i guess
     public TextMeshProUGUI Death_Text, GoodWill_Display, Money_Display, GW1, GW2, GW3, roulet, describtion, optiona, optionb, Turn_Display;
