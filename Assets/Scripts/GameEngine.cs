@@ -90,13 +90,15 @@ public class GameEngine : MonoBehaviour
     {
         if (Turn_Count != Turn_Change)
         {
-
+            print("test1");
             if (Child_Slave_Mine_Total >= 50)
             {
+                print("test2"+ (((Child_Slave_Mine_Total - 50) / 100) + 1) * 200);
                 Money += (((Child_Slave_Mine_Total - 50) / 100) + 1) * 200;
             }
             if (Child_Slave_Mine_Total < 50)
             {
+                print("test3"+ (((Child_Slave_Mine_Total - 50) / 100)) * 200);
                 Money += (((Child_Slave_Mine_Total - 50) / 100)) * 200;
             }
             if (MCDoogles_Total >= 50)
