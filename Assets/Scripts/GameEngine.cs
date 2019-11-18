@@ -20,7 +20,7 @@ public class GoodWillOptions
 public class Option {
     public string Name;
     public int DeathsCaused, Moneyadded,Good_Will; // Good_Will formerly GDA
-    public int MCdoogles, Wrecking_Crew, Political_Campaign, Child_Slave_Mine;
+    public int MCdoogles, Wrecking_Crew, Political_Campaign, Child_Slave_Mine, Building;
 }
 public class GameEngine : MonoBehaviour
 {
@@ -34,7 +34,7 @@ public class GameEngine : MonoBehaviour
     Dessition Current;
     GoodWillOptions GoodWillCurent1, GoodWillCurent2, GoodWillCurent3;
     GoodWillOptions[] GWOS;
-    public int MCDoogles_Total, WreckingCrew_Total, PoliticalCampaign_Total, Child_Slave_Mine_Total;
+    public int MCDoogles_Total, WreckingCrew_Total, PoliticalCampaign_Total, Child_Slave_Mine_Total, Building_Total;
     public Slider com, com1, com2, com3;
     int past;
     public GameObject Good_Boi_Selected, Good_Boi_Selected2, Good_Boi_Selected3;
@@ -53,6 +53,7 @@ public class GameEngine : MonoBehaviour
         WreckingCrew_Total = 50;
         PoliticalCampaign_Total = 50;
         Child_Slave_Mine_Total = 50;
+        Building_Total = 50;
         Turn_Change = Turn_Count;
     }
     public int Rand_Des()
@@ -91,43 +92,50 @@ public class GameEngine : MonoBehaviour
     {
         if (Turn_Count != Turn_Change)
         {
-            print("test1");
             if (Child_Slave_Mine_Total >= 50)
             {
-                print("test2"+ (((Child_Slave_Mine_Total - 50) / 100) + 1) * 200);
-                Money += (((Child_Slave_Mine_Total - 50) / 100) + 1) * 200;
+
+                Money += (((Child_Slave_Mine_Total - 50) / 100) + 1) * 50;
             }
             if (Child_Slave_Mine_Total < 50)
             {
-                print("test3"+ (((Child_Slave_Mine_Total - 50) / 100)) * 200);
-                Money += (((Child_Slave_Mine_Total - 50) / 100)) * 200;
+                Money += (((Child_Slave_Mine_Total - 50) / 100)) * 50;
             }
             if (MCDoogles_Total >= 50)
             {
-                Money += (((MCDoogles_Total - 50) / 100) + 1) * 200;
+                Money += (((MCDoogles_Total - 50) / 100) + 1) * 50;
             }
             if (MCDoogles_Total < 50)
             {
-                Money += (((MCDoogles_Total - 50) / 100)) * 200;
+                Money += (((MCDoogles_Total - 50) / 100)) * 50;
             }
             if (WreckingCrew_Total >= 50)
             {
-                Money += (((WreckingCrew_Total - 50) / 100) + 1) * 200;
+                Money += (((WreckingCrew_Total - 50) / 100) + 1) * 50;
             }
             if (WreckingCrew_Total < 50)
             {
-                Money += (((WreckingCrew_Total - 50) / 100)) * 200;
+                Money += (((WreckingCrew_Total - 50) / 100)) * 50;
             }
             if (PoliticalCampaign_Total >= 50)
             {
-                Money += (((PoliticalCampaign_Total - 50) / 100) + 1) * 200;
+                Money += (((PoliticalCampaign_Total - 50) / 100) + 1) * 50;
             }
             if (PoliticalCampaign_Total < 50)
             {
-                Money += (((PoliticalCampaign_Total - 50) / 100)) * 200;
+                Money += (((PoliticalCampaign_Total - 50) / 100)) * 50;
+            }
+            if (Building_Total >= 50)
+            {
+                Money += (((Building_Total - 50) / 100) + 1) * 50;
+            }
+            if (Building_Total < 50)
+            {
+                Money += (((Building_Total - 50) / 100)) * 50;
             }
             Turn_Change = Turn_Count;
         }
+        
     }
     public void Select(int selector)
     {
@@ -140,6 +148,7 @@ public class GameEngine : MonoBehaviour
             WreckingCrew_Total += Current.A.Wrecking_Crew;
             PoliticalCampaign_Total += Current.A.Political_Campaign;
             Child_Slave_Mine_Total += Current.A.Child_Slave_Mine;
+            Building_Total += Current.A.Building;
         }
         if (selector == 2)
         {
@@ -150,6 +159,7 @@ public class GameEngine : MonoBehaviour
             WreckingCrew_Total += Current.B.Wrecking_Crew;
             PoliticalCampaign_Total += Current.B.Political_Campaign;
             Child_Slave_Mine_Total += Current.B.Child_Slave_Mine;
+            Building_Total += Current.B.Building;
         }
         Turn_Count++;
         New();
