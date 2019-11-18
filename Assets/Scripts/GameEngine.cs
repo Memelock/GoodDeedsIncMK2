@@ -3,6 +3,7 @@ using System.Collections.Specialized;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 [System.Serializable]
 public class Dessition{
     public string Description;
@@ -27,7 +28,8 @@ public class GameEngine : MonoBehaviour
     [SerializeField] List<GoodWillOptions> GWO = new List<GoodWillOptions>();
     public int Money, Deaths, GoodWill, Turn_Count, Starting_Money, Starting_Goodwill, Turn_Change;
     public int roulet_spins = 0;
-    public Text describtion, optiona, optionb, MT, Dealths, GWON, GW1, GW2, GW3, roulet, Turn_Display, GoodWill_Display;
+    public Text  GWON;
+    public TextMeshProUGUI Death_Text, GoodWill_Display, Money_Display, GW1, GW2, GW3, roulet, describtion, optiona, optionb, Turn_Display;
     Dessition Current;
     GoodWillOptions GoodWillCurent1, GoodWillCurent2, GoodWillCurent3;
     GoodWillOptions[] GWOS;
@@ -195,8 +197,8 @@ public class GameEngine : MonoBehaviour
         optiona.text = Current.A.Name +" $ " + Current.A.Moneyadded;
         optionb.text = Current.B.Name + " $ " + Current.B.Moneyadded;
         roulet.text = "PR Research $" + Roulet_Cost();
-        MT.text = Money.ToString();
-        Dealths.text = Deaths.ToString();
+        Money_Display.text = Money.ToString();
+        Death_Text.text = Deaths.ToString();
         Turn_Display.text = Turn_Count.ToString();
         //if(GoodWill > 100)
         //{
