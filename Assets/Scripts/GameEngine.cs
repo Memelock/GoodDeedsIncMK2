@@ -33,7 +33,7 @@ public class GameEngine : MonoBehaviour
     //public Text ;
    // public Text  GWON; if anyone knows what this is, like uh say something i guess
     public TextMeshProUGUI Death_Text, GoodWill_Display, Money_Display, GW1, GW2, GW3, roulet, describtion, optiona, optionb, Turn_Display, pub, Bank_Cash;
-    Dessition Current;
+     public Dessition Current;
     GoodWillOptions GoodWillCurent1, GoodWillCurent2, GoodWillCurent3;
     GoodWillOptions[] GWOS;
     public int MCDoogles_Total, WreckingCrew_Total, PoliticalCampaign_Total, Child_Slave_Mine_Total, Building_Total;
@@ -248,10 +248,18 @@ public class GameEngine : MonoBehaviour
             Turn_Count++;
         }
     }
+    //public void endgame()
+    //{
+    //    Appcontroller.Open
+    //}
 
     // Update is called once per frame
     void Update()
     {
+        //if(Turn_Count == 25)
+        //{
+        //    endgame();
+        //}
         Passive_Income();
         com.value = MCDoogles_Total;
         com1.value = WreckingCrew_Total;
