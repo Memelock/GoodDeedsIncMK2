@@ -29,13 +29,14 @@ public class GameEngine : MonoBehaviour
     public long Money, Deaths;
     public int GoodWill, Turn_Count, Starting_Money, Starting_Goodwill, Turn_Change;
     public int roulet_spins = 0;
+    public Text pub;
    // public Text  GWON; if anyone knows what this is, like uh say something i guess
     public TextMeshProUGUI Death_Text, GoodWill_Display, Money_Display, GW1, GW2, GW3, roulet, describtion, optiona, optionb, Turn_Display;
     Dessition Current;
     GoodWillOptions GoodWillCurent1, GoodWillCurent2, GoodWillCurent3;
     GoodWillOptions[] GWOS;
     public int MCDoogles_Total, WreckingCrew_Total, PoliticalCampaign_Total, Child_Slave_Mine_Total, Building_Total;
-    public Slider com, com1, com2, com3;
+    public Slider com, com1, com2, com3, com4;
     int past;
     public GameObject Good_Boi_Selected, Good_Boi_Selected2, Good_Boi_Selected3;
     // Start is called before the first frame update
@@ -90,6 +91,14 @@ public class GameEngine : MonoBehaviour
     }
     public void Passive_Income()
     {
+        if (GoodWill > 100)
+        {
+            pub.text = "they love you";
+        }
+        else {
+                pub.text = "they hate you";
+
+        }
         if (Turn_Count != Turn_Change)
         {
             if (Child_Slave_Mine_Total >= 50)
@@ -203,6 +212,8 @@ public class GameEngine : MonoBehaviour
         com1.value = WreckingCrew_Total;
         com2.value = PoliticalCampaign_Total;
         com3.value = Child_Slave_Mine_Total;
+        com4.value = Building_Total;
+
         describtion.text = Current.Description;
         GW1.text = GoodWillCurent1.Name + " $ " + GoodWillCurent1.Cost;
         GW2.text = GoodWillCurent2.Name + " $ " + GoodWillCurent2.Cost;
