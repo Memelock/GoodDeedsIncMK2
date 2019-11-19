@@ -27,11 +27,12 @@ public class GameEngine : MonoBehaviour
     [SerializeField] List<Dessition> dessitions = new List<Dessition>();
     [SerializeField] List<GoodWillOptions> GWO = new List<GoodWillOptions>();
     public long Money, Deaths;
-    public int GoodWill, Turn_Count, Starting_Money, Starting_Goodwill, Turn_Change;
+    public int GoodWill, Turn_Count, Starting_Money, Starting_Goodwill, Turn_Change, IndaBank;
+    public bool DidI_Withdraw = false;
     public int roulet_spins = 0;
-    public Text pub;
+    //public Text ;
    // public Text  GWON; if anyone knows what this is, like uh say something i guess
-    public TextMeshProUGUI Death_Text, GoodWill_Display, Money_Display, GW1, GW2, GW3, roulet, describtion, optiona, optionb, Turn_Display;
+    public TextMeshProUGUI Death_Text, GoodWill_Display, Money_Display, GW1, GW2, GW3, roulet, describtion, optiona, optionb, Turn_Display, pub, Bank_Cash;
     Dessition Current;
     GoodWillOptions GoodWillCurent1, GoodWillCurent2, GoodWillCurent3;
     GoodWillOptions[] GWOS;
@@ -48,6 +49,7 @@ public class GameEngine : MonoBehaviour
         com1.maxValue = 100;
         com2.maxValue = 100;
         com3.maxValue = 100;
+        com4.maxValue = 100;
         Money = Starting_Money;
         GoodWill = Starting_Goodwill;
         MCDoogles_Total = 50;
@@ -55,7 +57,31 @@ public class GameEngine : MonoBehaviour
         PoliticalCampaign_Total = 50;
         Child_Slave_Mine_Total = 50;
         Building_Total = 50;
+        IndaBank = 0;
+        Turn_Count = 0;
         Turn_Change = Turn_Count;
+    }
+    public void Reset()
+    {
+        New();
+        GoodWillReroll();
+        com.maxValue = 100;
+        com1.maxValue = 100;
+        com2.maxValue = 100;
+        com3.maxValue = 100;
+        com4.maxValue = 100;
+        Deaths = 0;
+        IndaBank = 0;
+        Money = Starting_Money;
+        GoodWill = Starting_Goodwill;
+        MCDoogles_Total = 50;
+        WreckingCrew_Total = 50;
+        PoliticalCampaign_Total = 50;
+        Child_Slave_Mine_Total = 50;
+        Building_Total = 50;
+        Turn_Count = 0;
+        Turn_Change = Turn_Count;
+
     }
     public int Rand_Des()
     {
@@ -101,48 +127,56 @@ public class GameEngine : MonoBehaviour
         }
         if (Turn_Count != Turn_Change)
         {
-            if (Child_Slave_Mine_Total >= 50)
+            if (DidI_Withdraw == false)
             {
+                if (Child_Slave_Mine_Total >= 50)
+                {
 
-                Money += (((Child_Slave_Mine_Total - 50) / 100) + 1) * 50;
+                    IndaBank += (((Child_Slave_Mine_Total - 50) / 100) + 1) * 50;
+                }
+                if (Child_Slave_Mine_Total < 50)
+                {
+                    IndaBank += (((Child_Slave_Mine_Total - 50) / 100)) * 50;
+                }
+                if (MCDoogles_Total >= 50)
+                {
+                    IndaBank += (((MCDoogles_Total - 50) / 100) + 1) * 50;
+                }
+                if (MCDoogles_Total < 50)
+                {
+                    IndaBank += (((MCDoogles_Total - 50) / 100)) * 50;
+                }
+                if (WreckingCrew_Total >= 50)
+                {
+                    IndaBank += (((WreckingCrew_Total - 50) / 100) + 1) * 50;
+                }
+                if (WreckingCrew_Total < 50)
+                {
+                    IndaBank += (((WreckingCrew_Total - 50) / 100)) * 50;
+                }
+                if (PoliticalCampaign_Total >= 50)
+                {
+                    IndaBank += (((PoliticalCampaign_Total - 50) / 100) + 1) * 50;
+                }
+                if (PoliticalCampaign_Total < 50)
+                {
+                    IndaBank += (((PoliticalCampaign_Total - 50) / 100)) * 50;
+                }
+                if (Building_Total >= 50)
+                {
+                    IndaBank += (((Building_Total - 50) / 100) + 1) * 50;
+                }
+                if (Building_Total < 50)
+                {
+                    IndaBank += (((Building_Total - 50) / 100)) * 50;
+                }
+                Turn_Change = Turn_Count;
             }
-            if (Child_Slave_Mine_Total < 50)
+            else
             {
-                Money += (((Child_Slave_Mine_Total - 50) / 100)) * 50;
+                Turn_Change = Turn_Count;
+                DidI_Withdraw = false;
             }
-            if (MCDoogles_Total >= 50)
-            {
-                Money += (((MCDoogles_Total - 50) / 100) + 1) * 50;
-            }
-            if (MCDoogles_Total < 50)
-            {
-                Money += (((MCDoogles_Total - 50) / 100)) * 50;
-            }
-            if (WreckingCrew_Total >= 50)
-            {
-                Money += (((WreckingCrew_Total - 50) / 100) + 1) * 50;
-            }
-            if (WreckingCrew_Total < 50)
-            {
-                Money += (((WreckingCrew_Total - 50) / 100)) * 50;
-            }
-            if (PoliticalCampaign_Total >= 50)
-            {
-                Money += (((PoliticalCampaign_Total - 50) / 100) + 1) * 50;
-            }
-            if (PoliticalCampaign_Total < 50)
-            {
-                Money += (((PoliticalCampaign_Total - 50) / 100)) * 50;
-            }
-            if (Building_Total >= 50)
-            {
-                Money += (((Building_Total - 50) / 100) + 1) * 50;
-            }
-            if (Building_Total < 50)
-            {
-                Money += (((Building_Total - 50) / 100)) * 50;
-            }
-            Turn_Change = Turn_Count;
         }
         
     }
@@ -180,6 +214,7 @@ public class GameEngine : MonoBehaviour
             Money -= GoodWillCurent1.Cost;
             GoodWill += GoodWillCurent1.GWM;
             Good_Boi_Selected.SetActive(false);
+            DidI_Withdraw = true;
             Turn_Count++;
         }
     }
@@ -203,6 +238,16 @@ public class GameEngine : MonoBehaviour
             Turn_Count++;
         }
     }
+    public void Withdrawl()
+    {
+        if (IndaBank != 0)
+        {
+            Money += IndaBank;
+            IndaBank = 0;
+            DidI_Withdraw = true;
+            Turn_Count++;
+        }
+    }
 
     // Update is called once per frame
     void Update()
@@ -213,7 +258,13 @@ public class GameEngine : MonoBehaviour
         com2.value = PoliticalCampaign_Total;
         com3.value = Child_Slave_Mine_Total;
         com4.value = Building_Total;
-
+        if (Input.GetKeyDown(KeyCode.R)) {
+            Reset();
+        }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Application.Quit();
+        }
         describtion.text = Current.Description;
         GW1.text = GoodWillCurent1.Name + " $ " + GoodWillCurent1.Cost;
         GW2.text = GoodWillCurent2.Name + " $ " + GoodWillCurent2.Cost;
@@ -221,6 +272,7 @@ public class GameEngine : MonoBehaviour
         optiona.text = Current.A.Name +" $ " + Current.A.Moneyadded;
         optionb.text = Current.B.Name + " $ " + Current.B.Moneyadded;
         roulet.text = "PR Research $" + Roulet_Cost();
+        Bank_Cash.text = IndaBank.ToString();
         Money_Display.text = Money.ToString();
         Death_Text.text = Deaths.ToString();
         Turn_Display.text = Turn_Count.ToString();
