@@ -5908,163 +5908,168 @@ MonoBehaviour:
       Political_Campaign: 5
       Child_Slave_Mine: 5
       Building: 0
-  - Description: Mine calabed
+  - Description: Dave from the wrecking crew offers to steal wreking equipment from
+      a local construction sight.
     A:
-      Name: save orphans
+      Name: Steal from the sight
+      DeathsCaused: 25
+      Moneyadded: 0
+      Good_Will: -5
+      MCdoogles: 0
+      Wrecking_Crew: 20
+      Political_Campaign: -5
+      Child_Slave_Mine: 0
+      Building: -10
+    B:
+      Name: Use the outdated equipment you have
+      DeathsCaused: 200
+      Moneyadded: 0
+      Good_Will: -5
+      MCdoogles: 0
+      Wrecking_Crew: -5
+      Political_Campaign: 5
+      Child_Slave_Mine: 0
+      Building: 20
+  - Description: London from accounting complained that bell boys ask for too much
+      pay in your hotel buildings
+    A:
+      Name: Conscript orphans from your mines
+      DeathsCaused: 0
+      Moneyadded: 200
+      Good_Will: -10
+      MCdoogles: 5
+      Wrecking_Crew: 0
+      Political_Campaign: -5
+      Child_Slave_Mine: -5
+      Building: 15
+    B:
+      Name: Threaten the curent staff with demolition if they dont accept lesser pay
+      DeathsCaused: 150
+      Moneyadded: 1500
+      Good_Will: -20
+      MCdoogles: -5
+      Wrecking_Crew: 10
+      Political_Campaign: -5
+      Child_Slave_Mine: 5
+      Building: 20
+  - Description: Debra from aquisitions reports that the school board could be bribed
+      to condem a local school where you could bulild more MCDoogles'
+    A:
+      Name: Destroy the schools
+      DeathsCaused: 150
+      Moneyadded: -200
+      Good_Will: -25
+      MCdoogles: 30
+      Wrecking_Crew: 15
+      Political_Campaign: -10
+      Child_Slave_Mine: 5
+      Building: 5
+    B:
+      Name: Let the schools be
       DeathsCaused: 0
       Moneyadded: 0
+      Good_Will: 10
+      MCdoogles: -5
+      Wrecking_Crew: -5
+      Political_Campaign: 5
+      Child_Slave_Mine: 0
+      Building: 0
+  - Description: Debra, your campaign manager scheduled an PR event where you will
+      be given a chance to give a speach
+    A:
+      Name: Talk about schools, government, and donating
+      DeathsCaused: 0
+      Moneyadded: 0
+      Good_Will: 25
+      MCdoogles: 5
+      Wrecking_Crew: -5
+      Political_Campaign: 15
+      Child_Slave_Mine: -5
+      Building: 0
+    B:
+      Name: Talk about Tax exemptions for those who work for your company
+      DeathsCaused: 100
+      Moneyadded: 1500
+      Good_Will: -5
+      MCdoogles: 5
+      Wrecking_Crew: 5
+      Political_Campaign: -10
+      Child_Slave_Mine: -5
+      Building: 5
+  - Description: Photos have leaked of you kicking puppies, how do you respond
+    A:
+      Name: '"He had it comming"'
+      DeathsCaused: 15
+      Moneyadded: 250
+      Good_Will: -15
+      MCdoogles: 0
+      Wrecking_Crew: 10
+      Political_Campaign: -10
+      Child_Slave_Mine: 10
+      Building: 5
+    B:
+      Name: '"It was a mistake that I deeply regret"'
+      DeathsCaused: 0
+      Moneyadded: 0
+      Good_Will: 25
+      MCdoogles: 5
+      Wrecking_Crew: 0
+      Political_Campaign: 0
+      Child_Slave_Mine: 0
+      Building: 0
+  - Description: An intern discovers your plans to leave for the caymen islands once
+      you have left the city in ruins and have your fortune
+    A:
+      Name: '"Silence" the intern'
+      DeathsCaused: 1
+      Moneyadded: 200
       Good_Will: 0
       MCdoogles: 0
-      Wrecking_Crew: 0
+      Wrecking_Crew: 5
       Political_Campaign: 0
       Child_Slave_Mine: 0
       Building: 0
     B:
-      Name: diamonds
-      DeathsCaused: 200
-      Moneyadded: 2000
-      Good_Will: 0
+      Name: Send him to the mines
+      DeathsCaused: 5
+      Moneyadded: 200
+      Good_Will: -5
       MCdoogles: 0
-      Wrecking_Crew: 0
-      Political_Campaign: 0
-      Child_Slave_Mine: 0
-      Building: 0
-  - Description: Mine calabed
-    A:
-      Name: save orphans
-      DeathsCaused: 0
-      Moneyadded: 0
-      Good_Will: 0
-      MCdoogles: 0
-      Wrecking_Crew: 0
-      Political_Campaign: 0
-      Child_Slave_Mine: 0
-      Building: 0
-    B:
-      Name: diamonds
-      DeathsCaused: 200
-      Moneyadded: 2000
-      Good_Will: 0
-      MCdoogles: 0
-      Wrecking_Crew: 0
-      Political_Campaign: 0
-      Child_Slave_Mine: 0
-      Building: 0
-  - Description: Mine calabed
-    A:
-      Name: save orphans
-      DeathsCaused: 0
-      Moneyadded: 0
-      Good_Will: 0
-      MCdoogles: 0
-      Wrecking_Crew: 0
-      Political_Campaign: 0
-      Child_Slave_Mine: 0
-      Building: 0
-    B:
-      Name: diamonds
-      DeathsCaused: 200
-      Moneyadded: 2000
-      Good_Will: 0
-      MCdoogles: 0
-      Wrecking_Crew: 0
-      Political_Campaign: 0
-      Child_Slave_Mine: 0
-      Building: 0
-  - Description: Mine calabed
-    A:
-      Name: save orphans
-      DeathsCaused: 0
-      Moneyadded: 0
-      Good_Will: 0
-      MCdoogles: 0
-      Wrecking_Crew: 0
-      Political_Campaign: 0
-      Child_Slave_Mine: 0
-      Building: 0
-    B:
-      Name: diamonds
-      DeathsCaused: 200
-      Moneyadded: 2000
-      Good_Will: 0
-      MCdoogles: 0
-      Wrecking_Crew: 0
-      Political_Campaign: 0
-      Child_Slave_Mine: 0
-      Building: 0
-  - Description: Mine calabed
-    A:
-      Name: save orphans
-      DeathsCaused: 0
-      Moneyadded: 0
-      Good_Will: 0
-      MCdoogles: 0
-      Wrecking_Crew: 0
-      Political_Campaign: 0
-      Child_Slave_Mine: 0
-      Building: 0
-    B:
-      Name: diamonds
-      DeathsCaused: 200
-      Moneyadded: 2000
-      Good_Will: 0
-      MCdoogles: 0
-      Wrecking_Crew: 0
-      Political_Campaign: 0
-      Child_Slave_Mine: 0
-      Building: 0
-  - Description: Mine calabed
-    A:
-      Name: save orphans
-      DeathsCaused: 0
-      Moneyadded: 0
-      Good_Will: 0
-      MCdoogles: 0
-      Wrecking_Crew: 0
-      Political_Campaign: 0
-      Child_Slave_Mine: 0
-      Building: 0
-    B:
-      Name: diamonds
-      DeathsCaused: 200
-      Moneyadded: 2000
-      Good_Will: 0
-      MCdoogles: 0
-      Wrecking_Crew: 0
-      Political_Campaign: 0
-      Child_Slave_Mine: 0
+      Wrecking_Crew: 5
+      Political_Campaign: -5
+      Child_Slave_Mine: 5
       Building: 0
   GWO:
-  - Name: sfasfas
+  - Name: Real Neighbor hours
+    GWM: 5
+    Cost: 0
+  - Name: Donate to the schools
+    GWM: 25
+    Cost: 250
+  - Name: Give MCDoogles coupons to the homeless
     GWM: 10
+    Cost: 50
+  - Name: Go door to door kissing babies
+    GWM: 5
     Cost: 100
-  - Name: sfgdgf
-    GWM: 10
+  - Name: Plant trees and make a big deal of it
+    GWM: 15
+    Cost: 200
+  - Name: Film yourself riding shirtless on the back of a bear
+    GWM: 20
     Cost: 100
-  - Name: Sponser event
-    GWM: 10
-    Cost: 100
-  - Name: Sponser event
-    GWM: 10
-    Cost: 100
-  - Name: sfasfas
-    GWM: 10
-    Cost: 100
-  - Name: Sponser event
-    GWM: 10
-    Cost: 100
-  - Name: fsafsafas
-    GWM: 10
-    Cost: 100
-  - Name: Sponser event
-    GWM: 10
-    Cost: 100
-  - Name: Sponser event
-    GWM: 10
-    Cost: 100
-  - Name: Sponser event
-    GWM: 10
-    Cost: 100
+  - Name: Release some of your orphan miners, making it seem like they were rescued
+    GWM: 15
+    Cost: 250
+  - Name: Donate 1 peperoni and 9 cheese pizzas to a programing club
+    GWM: 5
+    Cost: 200
+  - Name: Make a MCDoogle's dating simulator
+    GWM: 20
+    Cost: 150
+  - Name: Let James Keep memelock in his name
+    GWM: 40
+    Cost: 300
   Money: 5
   Deaths: 0
   GoodWill: 0
