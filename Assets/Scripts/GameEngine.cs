@@ -39,6 +39,7 @@ public class GameEngine : MonoBehaviour
     public int MCDoogles_Total, WreckingCrew_Total, PoliticalCampaign_Total, Child_Slave_Mine_Total, Building_Total;
     public Slider com, com1, com2, com3, com4;
     int past;
+    public Appcontroller Phil;
     public GameObject Good_Boi_Selected, Good_Boi_Selected2, Good_Boi_Selected3;
     // Start is called before the first frame update
     void Start()
@@ -317,23 +318,23 @@ public class GameEngine : MonoBehaviour
     }
     public void loseMoney()
     {
-
+        Phil.Open(10);
     }
     public void loseWill()
     {
-
+        Phil.Open(11);
     }
     public void losewillandmoney()
     {
-
+        Phil.Open(12);
     }
     public void losecoward()
     {
-
+        Phil.Open(14);
     }
     public void WinnerWinner()
     {
-
+        Phil.Open(13);
     }
     public void WinDetector()
     {
@@ -395,7 +396,7 @@ public class GameEngine : MonoBehaviour
         Bank_Cash.text = IndaBank.ToString();
         Money_Display.text = Money.ToString();
         Death_Text.text = Deaths.ToString();
-        Turn_Display.text = Turn_Count.ToString();
+        Turn_Display.text = "Day " + Turn_Count.ToString();
         //if(GoodWill > 100)
         //{
         //    GoodWill = 100;
