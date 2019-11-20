@@ -51,7 +51,7 @@ public class Tooltip : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
                 I5.sprite = icons[4];
             }
             else { I5.sprite = null; }
-            TTT.text = "Money" + GE.Current.A.Moneyadded.ToString() + " Deaths" + GE.Current.A.Moneyadded.ToString();
+            TTT.text = "Money: $" + GE.Current.A.Moneyadded.ToString(); //+ " Deaths" + GE.Current.A.Moneyadded.ToString();
         }
         else
         {
@@ -79,7 +79,7 @@ public class Tooltip : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
             {
                 I5.sprite = icons[4];
             }
-            TTT.text = " Money" + GE.Current.B.Moneyadded.ToString() + "Deaths" + GE.Current.B.Moneyadded.ToString();
+            TTT.text = " Money: $" + GE.Current.B.Moneyadded.ToString();// + "Deaths" + GE.Current.B.Moneyadded.ToString();
         }
     }
 

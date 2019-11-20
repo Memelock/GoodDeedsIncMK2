@@ -115,16 +115,35 @@ public class GameEngine : MonoBehaviour
         }
         Turn_Count++;  // Put to Vote, maybe free action
     }
-    public void Passive_Income()
+    public void GoodWillOmeter()
     {
-        if (GoodWill > 100)
+        if (GoodWill >= 0 && GoodWill < 21)
         {
-            pub.text = "they love you";
+            pub.text = "The Public hates you.";
         }
-        else {
-                pub.text = "they hate you";
+        if (GoodWill >= 21 && GoodWill < 41)
+        {
+            pub.text = "The Public dislikes you.";
 
         }
+        if (GoodWill >= 41 && GoodWill < 61)
+        {
+            pub.text = "The Public thinks your alright.";
+
+        }
+        if (GoodWill >= 61 && GoodWill < 81)
+        {
+            pub.text = "The Public thinks your cool.";
+
+        }
+        if (GoodWill >= 81 && GoodWill <= 100)
+        {
+            pub.text = "The Public thinks your Great!";
+
+        }
+    }
+    public void Passive_Income()
+    {
         if (Turn_Count != Turn_Change)
         {
             if (DidI_Withdraw == false)
@@ -132,43 +151,43 @@ public class GameEngine : MonoBehaviour
                 if (Child_Slave_Mine_Total >= 50)
                 {
 
-                    IndaBank += (((Child_Slave_Mine_Total - 50) / 100) + 1) * 50;
+                    IndaBank += (((Child_Slave_Mine_Total - 50) / 100) + 1) * 100;
                 }
                 if (Child_Slave_Mine_Total < 50)
                 {
-                    IndaBank += (((Child_Slave_Mine_Total - 50) / 100)) * 50;
+                    IndaBank += (((Child_Slave_Mine_Total - 50) / 100)) * 100;
                 }
                 if (MCDoogles_Total >= 50)
                 {
-                    IndaBank += (((MCDoogles_Total - 50) / 100) + 1) * 50;
+                    IndaBank += (((MCDoogles_Total - 50) / 100) + 1) * 100;
                 }
                 if (MCDoogles_Total < 50)
                 {
-                    IndaBank += (((MCDoogles_Total - 50) / 100)) * 50;
+                    IndaBank += (((MCDoogles_Total - 50) / 100)) * 100;
                 }
                 if (WreckingCrew_Total >= 50)
                 {
-                    IndaBank += (((WreckingCrew_Total - 50) / 100) + 1) * 50;
+                    IndaBank += (((WreckingCrew_Total - 50) / 100) + 1) * 100;
                 }
                 if (WreckingCrew_Total < 50)
                 {
-                    IndaBank += (((WreckingCrew_Total - 50) / 100)) * 50;
+                    IndaBank += (((WreckingCrew_Total - 50) / 100)) * 100;
                 }
                 if (PoliticalCampaign_Total >= 50)
                 {
-                    IndaBank += (((PoliticalCampaign_Total - 50) / 100) + 1) * 50;
+                    IndaBank += (((PoliticalCampaign_Total - 50) / 100) + 1) * 100;
                 }
                 if (PoliticalCampaign_Total < 50)
                 {
-                    IndaBank += (((PoliticalCampaign_Total - 50) / 100)) * 50;
+                    IndaBank += (((PoliticalCampaign_Total - 50) / 100)) * 100;
                 }
                 if (Building_Total >= 50)
                 {
-                    IndaBank += (((Building_Total - 50) / 100) + 1) * 50;
+                    IndaBank += (((Building_Total - 50) / 100) + 1) * 100;
                 }
                 if (Building_Total < 50)
                 {
-                    IndaBank += (((Building_Total - 50) / 100)) * 50;
+                    IndaBank += (((Building_Total - 50) / 100)) * 100;
                 }
                 Turn_Change = Turn_Count;
             }
@@ -248,6 +267,94 @@ public class GameEngine : MonoBehaviour
             Turn_Count++;
         }
     }
+
+    public void scalerizer()
+    {
+        if (MCDoogles_Total > 100)
+        {
+            MCDoogles_Total = 100;
+        }
+        if (Child_Slave_Mine_Total > 100)
+        {
+            Child_Slave_Mine_Total = 100;
+        }
+        if (Building_Total > 100)
+        {
+            Building_Total = 100;
+        }
+        if (PoliticalCampaign_Total > 100)
+        {
+            PoliticalCampaign_Total = 100;
+        }
+        if (WreckingCrew_Total > 100)
+        {
+            WreckingCrew_Total = 100;
+        }
+        if (GoodWill > 100)
+        {
+            GoodWill = 100;
+        }
+        if (MCDoogles_Total < 0)
+        {
+            MCDoogles_Total = 0;
+        }
+        if (Child_Slave_Mine_Total < 0)
+        {
+            Child_Slave_Mine_Total = 0;
+        }
+        if (Building_Total < 0)
+        {
+            Building_Total = 0;
+        }
+        if (PoliticalCampaign_Total < 0)
+        {
+            PoliticalCampaign_Total = 0;
+        }
+        if (WreckingCrew_Total < 0)
+        {
+            WreckingCrew_Total = 0;
+        }
+    }
+    public void loseMoney()
+    {
+
+    }
+    public void loseWill()
+    {
+
+    }
+    public void losewillandmoney()
+    {
+
+    }
+    public void losecoward()
+    {
+
+    }
+    public void WinnerWinner()
+    {
+
+    }
+    public void WinDetector()
+    {
+        if (Money == 0)
+        {
+            loseMoney();
+        }
+        if (Money <= 500 && GoodWill <= 20)
+        {
+            losewillandmoney();
+        }
+        if (GoodWill == 0)
+        {
+            loseWill();
+        }
+        if (Turn_Count == 25)
+        {
+            WinnerWinner();
+        }
+    }
+
     //public void endgame()
     //{
     //    Appcontroller.Open
@@ -260,12 +367,17 @@ public class GameEngine : MonoBehaviour
         //{
         //    endgame();
         //}
+        scalerizer();
+        GoodWillOmeter();
         Passive_Income();
+        WinDetector();
         com.value = MCDoogles_Total;
         com1.value = WreckingCrew_Total;
         com2.value = PoliticalCampaign_Total;
         com3.value = Child_Slave_Mine_Total;
         com4.value = Building_Total;
+      
+
         if (Input.GetKeyDown(KeyCode.R)) {
             Reset();
         }
@@ -274,9 +386,9 @@ public class GameEngine : MonoBehaviour
             Application.Quit();
         }
         describtion.text = Current.Description;
-        GW1.text = GoodWillCurent1.Name + " $ " + GoodWillCurent1.Cost;
-        GW2.text = GoodWillCurent2.Name + " $ " + GoodWillCurent2.Cost;
-        GW3.text = GoodWillCurent3.Name + " $ " + GoodWillCurent3.Cost;
+        GW1.text = GoodWillCurent1.Name ;
+        GW2.text = GoodWillCurent2.Name;
+        GW3.text = GoodWillCurent3.Name;
         optiona.text = Current.A.Name +" $ " + Current.A.Moneyadded;
         optionb.text = Current.B.Name + " $ " + Current.B.Moneyadded;
         roulet.text = "PR Research $" + Roulet_Cost();

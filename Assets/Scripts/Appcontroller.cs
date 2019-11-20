@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Appcontroller : MonoBehaviour
 {
-    public GameObject Main, Profit, PR, info, help, initial, exit, El_Banco;
+    public GameObject Main, Profit, PR, info, help, initial, exit, El_Banco, Poverty, Badwill, willandPov, ChickenDinner, COWARD;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +15,11 @@ public class Appcontroller : MonoBehaviour
         help.SetActive(false);
         initial.SetActive(true);
         El_Banco.SetActive(false);
+        Poverty.SetActive(false);
+        Badwill.SetActive(false);
+        willandPov.SetActive(false);
+        ChickenDinner.SetActive(false);
+        COWARD.SetActive(false);
 
     }
 
@@ -36,6 +41,11 @@ public class Appcontroller : MonoBehaviour
             help.SetActive(false);
             initial.SetActive(false);
             El_Banco.SetActive(false);
+            Poverty.SetActive(false);
+            Badwill.SetActive(false);
+            willandPov.SetActive(false);
+            ChickenDinner.SetActive(false);
+            COWARD.SetActive(false);
 
         }
         if (selector == 2)
@@ -48,6 +58,11 @@ public class Appcontroller : MonoBehaviour
             El_Banco.SetActive(false);
 
             initial.SetActive(false);
+            Poverty.SetActive(false);
+            Badwill.SetActive(false);
+            willandPov.SetActive(false);
+            ChickenDinner.SetActive(false);
+            COWARD.SetActive(false);
 
         }
         if (selector == 3)
@@ -59,7 +74,11 @@ public class Appcontroller : MonoBehaviour
             help.SetActive(false);
             initial.SetActive(false);
             El_Banco.SetActive(false);
-
+            Poverty.SetActive(false);
+            Badwill.SetActive(false);
+            willandPov.SetActive(false);
+            ChickenDinner.SetActive(false);
+            COWARD.SetActive(false);
 
         }
         if (selector == 4)
@@ -71,7 +90,11 @@ public class Appcontroller : MonoBehaviour
             help.SetActive(false);
             initial.SetActive(false);
             El_Banco.SetActive(false);
-
+            Poverty.SetActive(false);
+            Badwill.SetActive(false);
+            willandPov.SetActive(false);
+            ChickenDinner.SetActive(false);
+            COWARD.SetActive(false);
         }
         if (selector == 5)
         {
@@ -82,7 +105,11 @@ public class Appcontroller : MonoBehaviour
             help.SetActive(true);
             initial.SetActive(false);
             El_Banco.SetActive(false);
-
+            Poverty.SetActive(false);
+            Badwill.SetActive(false);
+            willandPov.SetActive(false);
+            ChickenDinner.SetActive(false);
+            COWARD.SetActive(false);
         }
         if (selector == 6)
         {
@@ -93,7 +120,11 @@ public class Appcontroller : MonoBehaviour
             help.SetActive(false);
             initial.SetActive(false);
             El_Banco.SetActive(false);
-
+            Poverty.SetActive(false);
+            Badwill.SetActive(false);
+            willandPov.SetActive(false);
+            ChickenDinner.SetActive(false);
+            COWARD.SetActive(false);
         }
         if (selector == 7)
         {
@@ -110,7 +141,11 @@ public class Appcontroller : MonoBehaviour
             help.SetActive(false);
             initial.SetActive(true);
             El_Banco.SetActive(false);
-
+            Poverty.SetActive(false);
+            Badwill.SetActive(false);
+            willandPov.SetActive(false);
+            ChickenDinner.SetActive(false);
+            COWARD.SetActive(false);
         }
         if (selector == 9)
         {
@@ -121,7 +156,86 @@ public class Appcontroller : MonoBehaviour
             help.SetActive(false);
             initial.SetActive(false);
             El_Banco.SetActive(true);
-
+            Poverty.SetActive(false);
+            Badwill.SetActive(false);
+            willandPov.SetActive(false);
+            ChickenDinner.SetActive(false);
+            COWARD.SetActive(false);
+        }
+        if(selector == 10)
+        {
+            Main.SetActive(false);
+            Profit.SetActive(false);
+            PR.SetActive(false);
+            info.SetActive(false);
+            help.SetActive(false);
+            initial.SetActive(false);
+            El_Banco.SetActive(false);
+            Poverty.SetActive(true);
+            Badwill.SetActive(false);
+            willandPov.SetActive(false);
+            ChickenDinner.SetActive(false);
+            COWARD.SetActive(false);
+        }
+        if (selector == 11)
+        {
+            Main.SetActive(false);
+            Profit.SetActive(false);
+            PR.SetActive(false);
+            info.SetActive(false);
+            help.SetActive(false);
+            initial.SetActive(false);
+            El_Banco.SetActive(false);
+            Poverty.SetActive(false);
+            Badwill.SetActive(true);
+            willandPov.SetActive(false);
+            ChickenDinner.SetActive(false);
+            COWARD.SetActive(false);
+        }
+        if (selector == 12)
+        {
+            Main.SetActive(false);
+            Profit.SetActive(false);
+            PR.SetActive(false);
+            info.SetActive(false);
+            help.SetActive(false);
+            initial.SetActive(false);
+            El_Banco.SetActive(false);
+            Poverty.SetActive(false);
+            Badwill.SetActive(false);
+            willandPov.SetActive(true);
+            ChickenDinner.SetActive(false);
+            COWARD.SetActive(false);
+        }
+        if (selector == 13)
+        {
+            Main.SetActive(false);
+            Profit.SetActive(false);
+            PR.SetActive(false);
+            info.SetActive(false);
+            help.SetActive(false);
+            initial.SetActive(false);
+            El_Banco.SetActive(false);
+            Poverty.SetActive(false);
+            Badwill.SetActive(false);
+            willandPov.SetActive(false);
+            ChickenDinner.SetActive(true);
+            COWARD.SetActive(false);
+        }
+        if (selector == 14)
+        {
+            Main.SetActive(false);
+            Profit.SetActive(false);
+            PR.SetActive(false);
+            info.SetActive(false);
+            help.SetActive(false);
+            initial.SetActive(false);
+            El_Banco.SetActive(false);
+            Poverty.SetActive(false);
+            Badwill.SetActive(false);
+            willandPov.SetActive(false);
+            ChickenDinner.SetActive(false);
+            COWARD.SetActive(true);
         }
     }
 }
