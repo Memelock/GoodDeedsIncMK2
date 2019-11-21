@@ -6225,28 +6225,248 @@ MonoBehaviour:
       Political_Campaign: 10
       Child_Slave_Mine: 5
       Building: 5
-  - Description: The Head of the Society of Hot Air Ballon Owners comes to you asking
-      to host an event at your Political campaign's headquarters to make stock photos
+  - Description: An argument between Heaven's Peak and your wrecking company has begun
+      over whether to expand a franchise of McDoogles or break it down.
     A:
-      Name: Yes, and have them fly your party's colors
+      Name: Expand the Franchise
       DeathsCaused: 0
-      Moneyadded: -300
+      Moneyadded: -200
       Good_Will: 5
       MCdoogles: 5
+      Wrecking_Crew: -5
+      Political_Campaign: 0
+      Child_Slave_Mine: 0
+      Building: 10
+    B:
+      Name: Take it Down
+      DeathsCaused: 20
+      Moneyadded: 200
+      Good_Will: -5
+      MCdoogles: -5
+      Wrecking_Crew: 15
+      Political_Campaign: 0
+      Child_Slave_Mine: 0
+      Building: -10
+  - Description: Riots have broken out in the streets over a shortage of McDoogle's
+      fries! What do you do?
+    A:
+      Name: Appropriate Extra Potato Farmland
+      DeathsCaused: 5
+      Moneyadded: -150
+      Good_Will: 5
+      MCdoogles: 5
+      Wrecking_Crew: 0
+      Political_Campaign: 0
+      Child_Slave_Mine: 0
+      Building: 0
+    B:
+      Name: Tough Out the Riots
+      DeathsCaused: 200
+      Moneyadded: 100
+      Good_Will: -10
+      MCdoogles: -5
+      Wrecking_Crew: 0
+      Political_Campaign: 0
+      Child_Slave_Mine: 0
+      Building: 0
+  - Description: Workers are protesting working conditions in the mines. How should
+      you react?
+    A:
+      Name: Cave into their demands
+      DeathsCaused: 0
+      Moneyadded: -500
+      Good_Will: 5
+      MCdoogles: 0
+      Wrecking_Crew: 0
+      Political_Campaign: 0
+      Child_Slave_Mine: 10
+      Building: 0
+    B:
+      Name: Silence them
+      DeathsCaused: 30
+      Moneyadded: -150
+      Good_Will: -10
+      MCdoogles: 0
+      Wrecking_Crew: 0
+      Political_Campaign: 0
+      Child_Slave_Mine: -10
+      Building: 0
+  - Description: People have been getting sick from eating the new mcDoogle's special
+      "Mcqwooper" customers are protesting for better quality ingredients
+    A:
+      Name: Ignore them. Are ingredients are the finest on the market!
+      DeathsCaused: 50
+      Moneyadded: 400
+      Good_Will: -10
+      MCdoogles: -10
+      Wrecking_Crew: 0
+      Political_Campaign: 0
+      Child_Slave_Mine: 0
+      Building: 0
+    B:
+      Name: Perhaps we should consider replacing our inventory...
+      DeathsCaused: 10
+      Moneyadded: -500
+      Good_Will: 5
+      MCdoogles: 5
+      Wrecking_Crew: 0
+      Political_Campaign: 0
+      Child_Slave_Mine: 0
+      Building: 0
+  - Description: You are caught in a scandal...again. What measures will you take
+      this time?
+    A:
+      Name: Apologize in person
+      DeathsCaused: 0
+      Moneyadded: 0
+      Good_Will: 5
+      MCdoogles: 0
+      Wrecking_Crew: 0
+      Political_Campaign: 0
+      Child_Slave_Mine: 0
+      Building: 0
+    B:
+      Name: Have your polititcal campaign handle it.
+      DeathsCaused: 0
+      Moneyadded: -100
+      Good_Will: -10
+      MCdoogles: 0
+      Wrecking_Crew: 0
+      Political_Campaign: 10
+      Child_Slave_Mine: 0
+      Building: 0
+  - Description: One of your corporate rivals called you a peaseant. A peaseant! How
+      do you react.
+    A:
+      Name: Grit your teeth and smile. You know who to call to take care of him...
+      DeathsCaused: 1
+      Moneyadded: -1000
+      Good_Will: 0
+      MCdoogles: 10
+      Wrecking_Crew: 10
+      Political_Campaign: 10
+      Child_Slave_Mine: 10
+      Building: 10
+    B:
+      Name: Call him a neanderthal. That'll teach him to insult you
+      DeathsCaused: 0
+      Moneyadded: 0
+      Good_Will: 10
+      MCdoogles: -5
+      Wrecking_Crew: -5
+      Political_Campaign: -5
+      Child_Slave_Mine: -5
+      Building: -5
+  - Description: A worker in your wrecking company has suffered a fatal accident!
+      The press wants to hear your response to this unfortunate accident
+    A:
+      Name: '"You know this is all rather normal..."'
+      DeathsCaused: 1
+      Moneyadded: 0
+      Good_Will: -5
+      MCdoogles: 0
+      Wrecking_Crew: -10
+      Political_Campaign: 0
+      Child_Slave_Mine: 0
+      Building: 0
+    B:
+      Name: '"We will take steps to avoid such an accident happening again"'
+      DeathsCaused: 1
+      Moneyadded: -300
+      Good_Will: 10
+      MCdoogles: 0
+      Wrecking_Crew: -5
+      Political_Campaign: 5
+      Child_Slave_Mine: 0
+      Building: 0
+  - Description: Your Real Estate Business has devised a plan to aggressively acquire
+      a large patch of land. This would leave many homeless but increase business
+      for you
+    A:
+      Name: Commence the plan
+      DeathsCaused: 200
+      Moneyadded: -1000
+      Good_Will: 0
+      MCdoogles: 5
+      Wrecking_Crew: 10
+      Political_Campaign: 5
+      Child_Slave_Mine: 5
+      Building: 15
+    B:
+      Name: Shelf the plan
+      DeathsCaused: 0
+      Moneyadded: 0
+      Good_Will: 0
+      MCdoogles: 0
+      Wrecking_Crew: 0
+      Political_Campaign: 0
+      Child_Slave_Mine: 0
+      Building: 0
+  - Description: Your Political Campaign is asking for funds to advocate for world
+      peace. While none of you believe in the cause you know this will increase your
+      goodwill
+    A:
+      Name: For World Peace!
+      DeathsCaused: 0
+      Moneyadded: -500
+      Good_Will: 20
+      MCdoogles: 0
+      Wrecking_Crew: 0
+      Political_Campaign: 15
+      Child_Slave_Mine: 0
+      Building: 0
+    B:
+      Name: World Peace is overated. Call off the campaign
+      DeathsCaused: 0
+      Moneyadded: 0
+      Good_Will: 0
+      MCdoogles: 0
+      Wrecking_Crew: 0
+      Political_Campaign: -5
+      Child_Slave_Mine: 0
+      Building: 0
+  - Description: You are feeling pretty good today
+    A:
+      Name: Donate to a charity
+      DeathsCaused: 0
+      Moneyadded: -200
+      Good_Will: 15
+      MCdoogles: 0
       Wrecking_Crew: 0
       Political_Campaign: 10
       Child_Slave_Mine: 0
       Building: 0
     B:
-      Name: Yes, and rig the blimps to explode over the HQ of your opponents
-      DeathsCaused: 200
-      Moneyadded: -500
-      Good_Will: -10
+      Name: Throw a massive party, and be sure to charge for attendance
+      DeathsCaused: 1
+      Moneyadded: 150
+      Good_Will: 5
       MCdoogles: 0
-      Wrecking_Crew: 15
-      Political_Campaign: 10
+      Wrecking_Crew: 0
+      Political_Campaign: 0
+      Child_Slave_Mine: 0
+      Building: 0
+  - Description: You come across a homeless child on your morning walk
+    A:
+      Name: Offer him a "job" in your mining operation
+      DeathsCaused: 0
+      Moneyadded: 20
+      Good_Will: -5
+      MCdoogles: 0
+      Wrecking_Crew: 0
+      Political_Campaign: 0
       Child_Slave_Mine: 5
-      Building: 5
+      Building: 0
+    B:
+      Name: Scoff and ignore him
+      DeathsCaused: 1
+      Moneyadded: 0
+      Good_Will: 0
+      MCdoogles: 0
+      Wrecking_Crew: 0
+      Political_Campaign: 0
+      Child_Slave_Mine: 0
+      Building: 0
   GWO:
   - Name: Real Neighbor hours
     GWM: 5
