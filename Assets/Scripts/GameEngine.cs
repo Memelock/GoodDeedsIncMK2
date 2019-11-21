@@ -26,7 +26,7 @@ public class GameEngine : MonoBehaviour
 {
     [SerializeField] List<Dessition> dessitions = new List<Dessition>();
     [SerializeField] List<GoodWillOptions> GWO = new List<GoodWillOptions>();
-    public long Money, Deaths;
+    public long Money, Deaths, death_mirror;
     public int GoodWill, Turn_Count, Starting_Money, Starting_Goodwill, Turn_Change, IndaBank;
     public bool DidI_Withdraw = false;
     public int roulet_spins = 0;
@@ -46,6 +46,7 @@ public class GameEngine : MonoBehaviour
     {
         New();
         GoodWillReroll();
+        death_mirror = 0;
         com.maxValue = 100;
         com1.maxValue = 100;
         com2.maxValue = 100;
@@ -72,6 +73,7 @@ public class GameEngine : MonoBehaviour
         com3.maxValue = 100;
         com4.maxValue = 100;
         Deaths = 0;
+        death_mirror = 0;
         IndaBank = 0;
         Money = Starting_Money;
         GoodWill = Starting_Goodwill;
@@ -96,7 +98,15 @@ public class GameEngine : MonoBehaviour
 
         return r;
     }
-
+    public void Deathtoll()
+    {
+        while(death_mirror >= 100)
+        {
+            Money += 50;
+            GoodWill -= 10;
+            death_mirror -= 100;
+        }
+    }
     public void New()
     {
         Current = dessitions[Rand_Des()];
@@ -207,6 +217,7 @@ public class GameEngine : MonoBehaviour
             Money += Current.A.Moneyadded;
             GoodWill += Current.A.Good_Will;
             Deaths += Current.A.DeathsCaused;
+            death_mirror += Current.A.DeathsCaused;
             MCDoogles_Total += Current.A.MCdoogles;
             WreckingCrew_Total += Current.A.Wrecking_Crew;
             PoliticalCampaign_Total += Current.A.Political_Campaign;
@@ -218,6 +229,7 @@ public class GameEngine : MonoBehaviour
             GoodWill += Current.B.Good_Will;
             Money += Current.B.Moneyadded;
             Deaths += Current.B.DeathsCaused;
+            death_mirror += Current.B.DeathsCaused;
             MCDoogles_Total += Current.B.MCdoogles;
             WreckingCrew_Total += Current.B.Wrecking_Crew;
             PoliticalCampaign_Total += Current.B.Political_Campaign;
@@ -369,6 +381,7 @@ public class GameEngine : MonoBehaviour
         GoodWillOmeter();
         Passive_Income();
         WinDetector();
+        Deathtoll();
         com.value = MCDoogles_Total;
         com1.value = WreckingCrew_Total;
         com2.value = PoliticalCampaign_Total;
