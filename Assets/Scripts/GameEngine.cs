@@ -268,9 +268,12 @@ public class GameEngine : MonoBehaviour
             Turn_Count++;
         }
     }
-
     public void scalerizer()
     {
+        if (Money < 0)
+        {
+            Money = 0;
+        }
         if (MCDoogles_Total > 100)
         {
             MCDoogles_Total = 100;
@@ -294,6 +297,10 @@ public class GameEngine : MonoBehaviour
         if (GoodWill > 100)
         {
             GoodWill = 100;
+        }
+        if (GoodWill < 0)
+        {
+            GoodWill = 0;
         }
         if (MCDoogles_Total < 0)
         {
@@ -355,19 +362,9 @@ public class GameEngine : MonoBehaviour
             WinnerWinner();
         }
     }
-
-    //public void endgame()
-    //{
-    //    Appcontroller.Open
-    //}
-
     // Update is called once per frame
     void Update()
     {
-        //if(Turn_Count == 25)
-        //{
-        //    endgame();
-        //}
         scalerizer();
         GoodWillOmeter();
         Passive_Income();
@@ -377,8 +374,6 @@ public class GameEngine : MonoBehaviour
         com2.value = PoliticalCampaign_Total;
         com3.value = Child_Slave_Mine_Total;
         com4.value = Building_Total;
-      
-
         if (Input.GetKeyDown(KeyCode.R)) {
             Reset();
         }
@@ -397,27 +392,6 @@ public class GameEngine : MonoBehaviour
         Money_Display.text = Money.ToString();
         Death_Text.text = Deaths.ToString();
         Turn_Display.text = "Day " + Turn_Count.ToString();
-        //if(GoodWill > 100)
-        //{
-        //    GoodWill = 100;
-        //}
-        //GoodWill_Display.text = GoodWill.ToString();
-        //if(Turn_Count == 25)
-        //{
-        //    if(GoodWill <= 20 && Money <= 500)
-        //    {
-
-        //    }
-        //    if(GoodWill > 20)
-        //    {
-
-        //    }
-        //    if(Money > 500)
-        //    {
-
-        //    }
-        //}
-
     }
     public void Roulet_detecter()
     {
