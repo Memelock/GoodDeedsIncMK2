@@ -366,9 +366,9 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 1067494703}
   - {fileID: 1883834967}
   - {fileID: 588743264}
-  - {fileID: 177579419}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 1, z: 0}
@@ -862,7 +862,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &65472309
 RectTransform:
   m_ObjectHideFlags: 0
@@ -953,7 +953,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.5, y: 76.365}
+  m_AnchoredPosition: {x: 3.3, y: 71}
   m_SizeDelta: {x: 176.8, y: 83.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &65772011
@@ -974,7 +974,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: By James "Memelock" Ferry, Andrew Crosswait, Ruel Coy, and Ed Velazquez
+  m_text: By James Ferry, Andrew Crosswait, Ruel Coy, and Ed Velazquez
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9430d5eb1d3d31f4fac5b6302fb783db, type: 2}
   m_sharedMaterial: {fileID: -2884415335810394280, guid: 9430d5eb1d3d31f4fac5b6302fb783db,
@@ -1044,12 +1044,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 65772011}
-    characterCount: 71
+    characterCount: 60
     spriteCount: 0
-    spaceCount: 10
-    wordCount: 11
+    spaceCount: 9
+    wordCount: 10
     linkCount: 0
-    lineCount: 4
+    lineCount: 3
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -1359,7 +1359,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 177579418}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1369,12 +1369,12 @@ RectTransform:
   - {fileID: 558086903}
   - {fileID: 1692461773}
   - {fileID: 1961730566}
-  m_Father: {fileID: 15644250}
-  m_RootOrder: 2
+  m_Father: {fileID: 1338953681}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000047326, y: 113}
+  m_AnchoredPosition: {x: -1.4014025, y: 111.416885}
   m_SizeDelta: {x: 363.8, y: 148.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &177579420
@@ -4080,12 +4080,12 @@ RectTransform:
   m_Children:
   - {fileID: 1463929252}
   m_Father: {fileID: 15644250}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.47100002, y: 0.021428572}
-  m_AnchorMax: {x: 0.5175125, y: 0.08453868}
-  m_AnchoredPosition: {x: -0.50001144, y: 5.600006}
-  m_SizeDelta: {x: 1, y: -23.3}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -11.500011, y: -511.39996}
+  m_SizeDelta: {x: 91, y: 44.700012}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &588743265
 MonoBehaviour:
@@ -5712,7 +5712,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &873973349
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6265,7 +6265,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &910221164
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6778,7 +6778,7 @@ MonoBehaviour:
       Political_Campaign: 2
       Child_Slave_Mine: -2
       Building: -1
-  - Description: The Child Employment Mine has Collapsed, revealing valuable Diamonds
+  - Description: The Child Employment Mine has collapsed, revealing valuable diamonds
     A:
       Name: Save Orphan Workforce
       DeathsCaused: 0
@@ -6820,8 +6820,8 @@ MonoBehaviour:
       Political_Campaign: -10
       Child_Slave_Mine: 5
       Building: 10
-  - Description: Wrecking Co. requests TNT for their projects, buy High quality TNT
-      or some that you cousin Earl made in his backyard
+  - Description: Wrecking Co. requests TNT for their projects, buy high quality TNT
+      or some that your cousin Earl made in his backyard
     A:
       Name: Quality Product
       DeathsCaused: 5
@@ -6855,7 +6855,7 @@ MonoBehaviour:
       Child_Slave_Mine: 5
       Building: 5
     B:
-      Name: Write Respons yourself
+      Name: Write response yourself
       DeathsCaused: 20
       Moneyadded: 0
       Good_Will: -15
@@ -6865,9 +6865,9 @@ MonoBehaviour:
       Child_Slave_Mine: -10
       Building: -10
   - Description: Billy from Ore processing threatens to go to the police if you dont
-      buy the miners happy meals from MCDoogle's
+      buy the miners Young Lad Meals from McDoogle's
     A:
-      Name: Buy 'em MCDoogles
+      Name: Buy 'em MCDoogle's
       DeathsCaused: 0
       Moneyadded: -100
       Good_Will: 2
@@ -6886,7 +6886,7 @@ MonoBehaviour:
       Political_Campaign: 0
       Child_Slave_Mine: 15
       Building: 0
-  - Description: Proposed Law to Tax every Twoot
+  - Description: Proposed law to tax every Twoot
     A:
       Name: Support Law
       DeathsCaused: 0
@@ -6907,7 +6907,7 @@ MonoBehaviour:
       Political_Campaign: 5
       Child_Slave_Mine: 0
       Building: 0
-  - Description: Riots at MCDoogle's due to lack of szechuan sauce
+  - Description: Riots at McDoogle's due to lack of szechuan sauce
     A:
       Name: Produce more for your raving customers
       DeathsCaused: 0
@@ -6950,10 +6950,10 @@ MonoBehaviour:
       Political_Campaign: 5
       Child_Slave_Mine: 5
       Building: 0
-  - Description: Dave from the wrecking crew offers to steal wreking equipment from
-      a local construction sight.
+  - Description: Dave from the wrecking crew offers to steal wrecking equipment from
+      a local construction site.
     A:
-      Name: Steal from the sight
+      Name: Steal from the site
       DeathsCaused: 25
       Moneyadded: 0
       Good_Will: -5
@@ -7016,8 +7016,8 @@ MonoBehaviour:
       Political_Campaign: 5
       Child_Slave_Mine: 0
       Building: 0
-  - Description: Sharel, your campaign manager scheduled an PR event where you will
-      be given a chance to give a speach
+  - Description: Sharel, your campaign manager, scheduled a PR event where you will
+      be given a chance to give a speech
     A:
       Name: Talk about schools, government, and donating
       DeathsCaused: 0
@@ -7029,7 +7029,7 @@ MonoBehaviour:
       Child_Slave_Mine: -5
       Building: 0
     B:
-      Name: Talk about Tax exemptions for those who work for your company
+      Name: Talk about tax exemptions for those who work for your company
       DeathsCaused: 100
       Moneyadded: 1500
       Good_Will: -5
@@ -7040,7 +7040,7 @@ MonoBehaviour:
       Building: 5
   - Description: Photos have leaked of you kicking puppies, how do you respond
     A:
-      Name: '"He had it comming"'
+      Name: '"He had it coming"'
       DeathsCaused: 15
       Moneyadded: 250
       Good_Will: -15
@@ -7059,7 +7059,7 @@ MonoBehaviour:
       Political_Campaign: 0
       Child_Slave_Mine: 0
       Building: 0
-  - Description: An intern discovers your plans to leave for the caymen islands once
+  - Description: An intern discovers your plans to leave for the Caymen Islands once
       you have left the city in ruins and have your fortune
     A:
       Name: '"Silence" the intern'
@@ -7103,8 +7103,8 @@ MonoBehaviour:
       Political_Campaign: 10
       Child_Slave_Mine: 5
       Building: 5
-  - Description: An argument between Heaven's Peak and your wrecking company has begun
-      over whether to expand a franchise of McDoogles or break it down.
+  - Description: An argument between your Real Estate company and your Wrecking company
+      has begun over whether to expand a franchise of McDoogles or break it down.
     A:
       Name: Expand the Franchise
       DeathsCaused: 0
@@ -7169,10 +7169,10 @@ MonoBehaviour:
       Political_Campaign: 0
       Child_Slave_Mine: -10
       Building: 0
-  - Description: People have been getting sick from eating the new mcDoogle's special
-      "Mcqwooper" customers are protesting for better quality ingredients
+  - Description: People have been getting sick from eating the new McDoogle's special
+      "McWooper." Customers are protesting for better quality ingredients.
     A:
-      Name: Ignore them. Are ingredients are the finest on the market!
+      Name: Ignore them. Our ingredients are the finest on the market!
       DeathsCaused: 50
       Moneyadded: 400
       Good_Will: -10
@@ -7236,9 +7236,9 @@ MonoBehaviour:
       Child_Slave_Mine: -5
       Building: -5
   - Description: A worker in your wrecking company has suffered a fatal accident!
-      The press wants to hear your response to this unfortunate accident
+      The press wants to hear your response to this unfortunate situation
     A:
-      Name: '"You know this is all rather normal..."'
+      Name: '"You''d think they''d learn, it happens every other week!"'
       DeathsCaused: 1
       Moneyadded: 0
       Good_Will: -5
@@ -7345,7 +7345,8 @@ MonoBehaviour:
       Political_Campaign: -5
       Child_Slave_Mine: 15
       Building: 5
-  - Description: Issue of unmotivated minors in the mines
+  - Description: Your minors are unmotivated, and aren't mining quickly enough. How
+      do you respond?
     A:
       Name: Let them take a half hour break
       DeathsCaused: 5
@@ -7366,7 +7367,7 @@ MonoBehaviour:
       Political_Campaign: -5
       Child_Slave_Mine: 15
       Building: 0
-  - Description: 'The Machinery used by your builders was destroyed in a worker''s
+  - Description: 'The machinery used by your builders was destroyed in a worker''s
       revolt '
     A:
       Name: Replace machines with Quality products
@@ -7383,28 +7384,6 @@ MonoBehaviour:
       DeathsCaused: 300
       Moneyadded: -100
       Good_Will: -5
-      MCdoogles: 5
-      Wrecking_Crew: 10
-      Political_Campaign: 0
-      Child_Slave_Mine: 5
-      Building: 5
-  - Description: The price of meat used in McDoogle's chicken has gone up
-    A:
-      Name: Continue to supply the product at your expense
-      DeathsCaused: 0
-      Moneyadded: -300
-      Good_Will: 10
-      MCdoogles: 10
-      Wrecking_Crew: 0
-      Political_Campaign: 5
-      Child_Slave_Mine: 5
-      Building: 0
-    B:
-      Name: Have your Wreking crew destroy the houses of obese people and use the
-        meat they find their in the chicken products
-      DeathsCaused: 150
-      Moneyadded: 0
-      Good_Will: -10
       MCdoogles: 5
       Wrecking_Crew: 10
       Political_Campaign: 0
@@ -7480,7 +7459,7 @@ MonoBehaviour:
       Building: 0
   - Description: Power needs to be supplied to your new hotel
     A:
-      Name: Use orphans from the slave mines on hampster wheels to power it
+      Name: Use minors from the mines on hampster wheels to power it
       DeathsCaused: 50
       Moneyadded: 500
       Good_Will: -5
@@ -7522,7 +7501,7 @@ MonoBehaviour:
       Political_Campaign: 5
       Child_Slave_Mine: 10
       Building: 0
-  - Description: Jeneffer from marketing says that McDoogle's should come up with
+  - Description: Jeneffer  from marketing says that McDoogle's should come up with
       a new line of toys
     A:
       Name: Make a line of toys based off of a trendy kids movie
@@ -7536,7 +7515,7 @@ MonoBehaviour:
       Building: 0
     B:
       Name: Make toys that when used give off subliminal messages to the kids telling
-        them to run away to your slave mine
+        them to run away to their nearest youth employment center
       DeathsCaused: 50
       Moneyadded: -100
       Good_Will: -5
@@ -7568,6 +7547,224 @@ MonoBehaviour:
       Political_Campaign: 0
       Child_Slave_Mine: 0
       Building: 0
+  - Description: The man you hired to write the safety regulations for all of your
+      businesses tragically slipped and died where someone had mopped and forgot to
+      put out a wet floor sign. Who will write the regulations now?
+    A:
+      Name: Have HR find a new person. They hired you all those years ago so they
+        must know what they're doing.
+      DeathsCaused: 1
+      Moneyadded: -200
+      Good_Will: 5
+      MCdoogles: 10
+      Wrecking_Crew: 10
+      Political_Campaign: 0
+      Child_Slave_Mine: 10
+      Building: 10
+    B:
+      Name: Write them yourself and don't forget to mention wet floor signs
+      DeathsCaused: 21
+      Moneyadded: 50
+      Good_Will: -10
+      MCdoogles: -5
+      Wrecking_Crew: -5
+      Political_Campaign: 0
+      Child_Slave_Mine: -5
+      Building: -5
+  - Description: Part of a political ally's house accidentally got dimolished in your
+      Wrecking company's weekly rounds to see if there are any buildings nobody would
+      miss.
+    A:
+      Name: Offer to rebuild that part of the house - on their dime, of course
+      DeathsCaused: 0
+      Moneyadded: 500
+      Good_Will: -5
+      MCdoogles: 0
+      Wrecking_Crew: -5
+      Political_Campaign: 5
+      Child_Slave_Mine: 0
+      Building: 10
+    B:
+      Name: Destroy the rest of the house and build a McDoogle's there instead, the
+        politician can sleep there.
+      DeathsCaused: 0
+      Moneyadded: 0
+      Good_Will: -10
+      MCdoogles: 15
+      Wrecking_Crew: 10
+      Political_Campaign: -10
+      Child_Slave_Mine: 0
+      Building: 0
+  - Description: A comedian is scheduled to perform in the auditorium at one of your
+      hotels. After reviewing his script, your subordinates bring it to your attention
+      that he makes a series of jokes at your expense. This cannot be allowed. How
+      do you proceed?
+    A:
+      Name: Schedule a hotel demoliton during his performance, that place was so last
+        year anyway.
+      DeathsCaused: 60
+      Moneyadded: -300
+      Good_Will: -5
+      MCdoogles: 0
+      Wrecking_Crew: 10
+      Political_Campaign: 0
+      Child_Slave_Mine: 0
+      Building: -10
+    B:
+      Name: Schedule yourself as his opener AND closer so you can humiliate him. Take
+        half of his earnings from the show for your contribution.
+      DeathsCaused: 0
+      Moneyadded: 150
+      Good_Will: -5
+      MCdoogles: 0
+      Wrecking_Crew: 0
+      Political_Campaign: 5
+      Child_Slave_Mine: 0
+      Building: 5
+  - Description: A local news website is sending in some photographers to do a photoshoot
+      of you. How do you pose?
+    A:
+      Name: Holding a McDoogle's Young Lad Meal
+      DeathsCaused: 0
+      Moneyadded: 100
+      Good_Will: 5
+      MCdoogles: 15
+      Wrecking_Crew: 0
+      Political_Campaign: 0
+      Child_Slave_Mine: 0
+      Building: 0
+    B:
+      Name: Scantily clad, sitting atop a wrecking ball with your wrecking company's
+        logo emblazoned across the front
+      DeathsCaused: 1
+      Moneyadded: 100
+      Good_Will: 5
+      MCdoogles: 0
+      Wrecking_Crew: 15
+      Political_Campaign: 0
+      Child_Slave_Mine: 0
+      Building: 0
+  - Description: A publicly maligned and yet very close member of your political group
+      openly cuts ties with you. How is he silenced?
+    A:
+      Name: Dispatch a group of highly trained, suspiciously small special agents
+      DeathsCaused: 1
+      Moneyadded: 0
+      Good_Will: 10
+      MCdoogles: 0
+      Wrecking_Crew: 0
+      Political_Campaign: 10
+      Child_Slave_Mine: 5
+      Building: 0
+    B:
+      Name: The next time he goes into a McDoogle's, cut off their supply of szechuan
+        sauce, causing a violent riot
+      DeathsCaused: 200
+      Moneyadded: -100
+      Good_Will: 5
+      MCdoogles: -10
+      Wrecking_Crew: 0
+      Political_Campaign: 5
+      Child_Slave_Mine: 0
+      Building: 0
+  - Description: An intern sends you a game some dopey college students made to make
+      fun of you, but after playing it you find it's actually quite enjoyable and
+      true to life. How do you repay them?
+    A:
+      Name: Sign the attendance form twice, once under an assumed name and your real
+        estate company's official email address.
+      DeathsCaused: 0
+      Moneyadded: 50
+      Good_Will: 10
+      MCdoogles: 0
+      Wrecking_Crew: 0
+      Political_Campaign: 0
+      Child_Slave_Mine: 0
+      Building: 10
+    B:
+      Name: Vote for them for the student choice award. Your political campaign approves
+        of you assisting in the rigging of an election.
+      DeathsCaused: 0
+      Moneyadded: 50
+      Good_Will: 10
+      MCdoogles: 0
+      Wrecking_Crew: 0
+      Political_Campaign: 10
+      Child_Slave_Mine: 0
+      Building: 0
+  - Description: PR wants you to give a speech to explain the extraordinary value
+      of your mines to your politcal allies and the general public. They're insisting
+      that in order to be the most convincing in your speech you must purchase a very
+      expensive suit.
+    A:
+      Name: Buy the suit. I've got money to burn!
+      DeathsCaused: 0
+      Moneyadded: -5000
+      Good_Will: 15
+      MCdoogles: 0
+      Wrecking_Crew: 0
+      Political_Campaign: 10
+      Child_Slave_Mine: 15
+      Building: 0
+    B:
+      Name: Arrive in jeans and a t-shirt in a misguided attempt to appear "youthful"
+      DeathsCaused: 2
+      Moneyadded: -20
+      Good_Will: -10
+      MCdoogles: -5
+      Wrecking_Crew: -5
+      Political_Campaign: -5
+      Child_Slave_Mine: -10
+      Building: -5
+  - Description: After a piece of heavy wrecking machinery falls through the ground
+      and into one of your mineshafts, the driver of the machinery and the mine supervisor
+      get into a dispute, and both are now hosptialized. Whose side do you take?
+    A:
+      Name: The mine supervisor's side. All the precious deposits in the shaft are
+        lost now!
+      DeathsCaused: 20
+      Moneyadded: -200
+      Good_Will: -5
+      MCdoogles: 0
+      Wrecking_Crew: -5
+      Political_Campaign: 0
+      Child_Slave_Mine: 10
+      Building: 0
+    B:
+      Name: The wrecker's side. The ground wouldn't have been weak there if it weren't
+        for shoddy mining practices!
+      DeathsCaused: 20
+      Moneyadded: -200
+      Good_Will: -5
+      MCdoogles: 0
+      Wrecking_Crew: 10
+      Political_Campaign: 0
+      Child_Slave_Mine: -5
+      Building: 0
+  - Description: A bill just got proposed to put a restriction on violent video games,
+      and your political allies wish to support it.. What is your stance?
+    A:
+      Name: Don't put a restriction on the games. The more violent games that are
+        sold to kids, the more McDoogle's toys you can promote!
+      DeathsCaused: 3
+      Moneyadded: 200
+      Good_Will: 5
+      MCdoogles: 10
+      Wrecking_Crew: 0
+      Political_Campaign: -5
+      Child_Slave_Mine: 0
+      Building: 0
+    B:
+      Name: Put a restriction on the games. This will fuel the anger of the minors
+        in your employ, causing them to work harder!
+      DeathsCaused: 10
+      Moneyadded: -100
+      Good_Will: -5
+      MCdoogles: 0
+      Wrecking_Crew: 0
+      Political_Campaign: 10
+      Child_Slave_Mine: 5
+      Building: 0
   GWO:
   - Name: Donate to the schools
     GWM: 25
@@ -7587,15 +7784,30 @@ MonoBehaviour:
   - Name: Release some of your orphan miners, making it seem like they were rescued
     GWM: 15
     Cost: 250
-  - Name: Donate 1 peperoni and 9 cheese pizzas to a programing club
+  - Name: Donate 1 cheese and 9 pepperoni pizzas to a programing club
     GWM: 5
     Cost: 200
   - Name: Make a MCDoogle's dating simulator
     GWM: 20
     Cost: 150
+  - Name: Visit a children's hospital dressed as a character from a game a lot of
+      children play
+    GWM: 15
+    Cost: 150
+  - Name: Buy a gold chain so people will respect you more
+    GWM: 10
+    Cost: 300
+  - Name: Establish a cooperation between McDoogal's and an adult cartoon
+    GWM: 25
+    Cost: 200
+  - Name: Make a big show of allowing homeless people to stay in a specific hotel
+      for free (but then usher them out the back into the mine behind the hotel)
+    GWM: 15
+    Cost: 100
   Money: 1000
   Deaths: 0
-  GoodWill: 100
+  death_mirror: 0
+  GoodWill: 75
   Turn_Count: 0
   Starting_Money: 1000
   Starting_Goodwill: 75
@@ -7617,26 +7829,27 @@ MonoBehaviour:
   pub: {fileID: 886486001}
   Bank_Cash: {fileID: 1033828498}
   Current:
-    Description: The Child Employment Mine has Collapsed, revealing valuable Diamonds
+    Description: People have been getting sick from eating the new mcDoogle's special
+      "Mcqwooper" customers are protesting for better quality ingredients
     A:
-      Name: Save Orphan Workforce
-      DeathsCaused: 0
-      Moneyadded: 0
-      Good_Will: 5
-      MCdoogles: 0
+      Name: Ignore them. Are ingredients are the finest on the market!
+      DeathsCaused: 50
+      Moneyadded: 400
+      Good_Will: -10
+      MCdoogles: -10
       Wrecking_Crew: 0
-      Political_Campaign: 5
-      Child_Slave_Mine: 10
+      Political_Campaign: 0
+      Child_Slave_Mine: 0
       Building: 0
     B:
-      Name: Rescue the Diamonds
-      DeathsCaused: 200
-      Moneyadded: 1000
-      Good_Will: -15
-      MCdoogles: -1
+      Name: Perhaps we should consider replacing our inventory...
+      DeathsCaused: 10
+      Moneyadded: -500
+      Good_Will: 5
+      MCdoogles: 5
       Wrecking_Crew: 0
-      Political_Campaign: -1
-      Child_Slave_Mine: -5
+      Political_Campaign: 0
+      Child_Slave_Mine: 0
       Building: 0
   MCDoogles_Total: 50
   WreckingCrew_Total: 50
@@ -7977,7 +8190,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.540011, y: -60.759964}
+  m_AnchoredPosition: {x: -6.8, y: -57.1}
   m_SizeDelta: {x: 131.32, y: 26.32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1055580577
@@ -7998,7 +8211,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: and escaped to the caman islands!
+  m_text: Enjoy your blood money
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9430d5eb1d3d31f4fac5b6302fb783db, type: 2}
   m_sharedMaterial: {fileID: -2884415335810394280, guid: 9430d5eb1d3d31f4fac5b6302fb783db,
@@ -8034,7 +8247,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_textAlignment: 257
+  m_textAlignment: 258
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -8044,7 +8257,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 17
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -8068,12 +8281,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1055580577}
-    characterCount: 16
+    characterCount: 22
     spriteCount: 0
     spaceCount: 3
     wordCount: 4
     linkCount: 0
-    lineCount: 1
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -8208,6 +8421,79 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1067494702
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1067494703}
+  - component: {fileID: 1067494705}
+  - component: {fileID: 1067494704}
+  m_Layer: 8
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1067494703
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067494702}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 15644250}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -6.6499023}
+  m_SizeDelta: {x: 0, y: -0.5999756}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1067494704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067494702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: c4bd740b358541044bdf13ff6f8a1862, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1067494705
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067494702}
+  m_CullTransparentMesh: 0
 --- !u!1 &1075672848
 GameObject:
   m_ObjectHideFlags: 0
@@ -9317,6 +9603,7 @@ RectTransform:
   - {fileID: 279853345}
   - {fileID: 1391496169}
   - {fileID: 343288448}
+  - {fileID: 177579419}
   m_Father: {fileID: 1883834967}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10541,8 +10828,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -11.400006, y: 5.3999796}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -11, y: -2.6}
+  m_SizeDelta: {x: 89.05, y: 85.41}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1461474404
 MonoBehaviour:
@@ -10562,7 +10849,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 261429673484452182, guid: 2d58f2a591530c4478aa6d9d7fdaa82a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 57745092218c9d344aac503d63d1938a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10614,7 +10901,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000020981, y: 0.42114067}
+  m_AnchoredPosition: {x: -0.000020981, y: 0.42114258}
   m_SizeDelta: {x: 45.729, y: 45.73}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1463929253
@@ -11001,8 +11288,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -8.300005, y: 66.7}
-  m_SizeDelta: {x: 72.9, y: 19.22}
+  m_AnchoredPosition: {x: -12.3, y: 69.23}
+  m_SizeDelta: {x: 96.98, y: 56.43}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1625427838
 MonoBehaviour:
@@ -11022,7 +11309,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You have won
+  m_text: Welcome! To the Cayman Islands
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9430d5eb1d3d31f4fac5b6302fb783db, type: 2}
   m_sharedMaterial: {fileID: -2884415335810394280, guid: 9430d5eb1d3d31f4fac5b6302fb783db,
@@ -11058,7 +11345,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_textAlignment: 257
+  m_textAlignment: 258
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -11068,7 +11355,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 0
+  m_firstOverflowCharacterIndex: 23
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -11092,12 +11379,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1625427838}
-    characterCount: 11
+    characterCount: 30
     spriteCount: 0
-    spaceCount: 2
-    wordCount: 3
+    spaceCount: 4
+    wordCount: 5
     linkCount: 0
-    lineCount: 1
+    lineCount: 3
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -11255,13 +11542,14 @@ MonoBehaviour:
   m_text: New Text
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9430d5eb1d3d31f4fac5b6302fb783db, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -2884415335810394280, guid: 9430d5eb1d3d31f4fac5b6302fb783db,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278190080
   m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -11280,7 +11568,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 52.35
+  m_fontSize: 52
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -12266,7 +12554,7 @@ RectTransform:
   - {fileID: 1965184138}
   - {fileID: 201316567}
   m_Father: {fileID: 15644250}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

@@ -102,9 +102,9 @@ public class GameEngine : MonoBehaviour
     {
         while(death_mirror >= 150)
         {
-            Money += 20;
+            IndaBank += 20;
             GoodWill -= 5;
-            death_mirror -= 100;
+            death_mirror -= 150;
         }
     }
     public void New()
@@ -139,17 +139,17 @@ public class GameEngine : MonoBehaviour
         }
         if (GoodWill >= 41 && GoodWill < 61)
         {
-            pub.text = "The Public thinks your alright.";
+            pub.text = "The Public thinks you're alright.";
 
         }
         if (GoodWill >= 61 && GoodWill < 81)
         {
-            pub.text = "The Public thinks your cool.";
+            pub.text = "The Public thinks you're cool.";
 
         }
         if (GoodWill >= 81 && GoodWill <= 100)
         {
-            pub.text = "The Public thinks your Great!";
+            pub.text = "The Public thinks you're Great!";
 
         }
     }
@@ -369,6 +369,10 @@ public class GameEngine : MonoBehaviour
         {
             loseWill();
         }
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            losecoward();
+        }
         if (Turn_Count == 25)
         {
             WinnerWinner();
@@ -395,11 +399,11 @@ public class GameEngine : MonoBehaviour
             Application.Quit();
         }
         describtion.text = Current.Description;
-        GW1.text = GoodWillCurent1.Name ;
-        GW2.text = GoodWillCurent2.Name;
-        GW3.text = GoodWillCurent3.Name;
-        optiona.text = Current.A.Name +" $ " + Current.A.Moneyadded;
-        optionb.text = Current.B.Name + " $ " + Current.B.Moneyadded;
+        GW1.text = GoodWillCurent1.Name + " $" + GoodWillCurent1.Cost;
+        GW2.text = GoodWillCurent2.Name + " $" + GoodWillCurent2.Cost;
+        GW3.text = GoodWillCurent3.Name + " $" + GoodWillCurent3.Cost;
+        optiona.text = Current.A.Name;
+        optionb.text = Current.B.Name;
         roulet.text = "PR Research $" + Roulet_Cost();
         Bank_Cash.text = IndaBank.ToString();
         Money_Display.text = Money.ToString();
