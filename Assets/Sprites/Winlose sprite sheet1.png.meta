@@ -1,0 +1,267 @@
+fileFormatVersion: 2
+guid: 2d58f2a591530c4478aa6d9d7fdaa82a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2986089262945977770
+    second: Winlose sprite sheet1_0
+  - first:
+      213: 3029283063170527805
+    second: Winlose sprite sheet1_1
+  - first:
+      213: -1502074422268651848
+    second: Winlose sprite sheet1_2
+  - first:
+      213: 4528316596689029115
+    second: Winlose sprite sheet1_3
+  - first:
+      213: 6707002466517581544
+    second: Winlose sprite sheet1_4
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 27, y: 267, z: 256, w: 15}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: 0
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Winlose sprite sheet1_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 263
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19bb3f3c79969b844a75fa7db5c4b7a2
+      internalID: -2986089262945977770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Winlose sprite sheet1_1
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 269
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45e7fe775f228fb45b70e713208762c3
+      internalID: 3029283063170527805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Winlose sprite sheet1_2
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 273
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f4441beca035f4baa966722d0f314c
+      internalID: -1502074422268651848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Winlose sprite sheet1_3
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 272
+        width: 39
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd3eb65ca23b5e4a9dcd44693080a9c
+      internalID: 4528316596689029115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Winlose sprite sheet1_4
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 283
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e2c6ca2412e0964ea959cc5a8e81549
+      internalID: 6707002466517581544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: -130, y: 144}
+      - {x: -136, y: 140}
+      - {x: -136, y: 108}
+      - {x: -97, y: 108}
+      - {x: -96, y: 109}
+      - {x: -96, y: 144}
+    - - {x: 79, y: 154}
+      - {x: 67, y: 154}
+      - {x: 65, y: 149}
+      - {x: 65, y: 134}
+      - {x: 85, y: 113}
+      - {x: 95, y: 113}
+      - {x: 98, y: 131}
+      - {x: 98, y: 148}
+      - {x: 97, y: 150}
+    - - {x: -80, y: 143}
+      - {x: -80, y: 128}
+      - {x: -75, y: 116}
+      - {x: -39, y: 116}
+      - {x: -29, y: 126}
+      - {x: -29, y: 141}
+      - {x: -30, y: 143}
+    - - {x: -8, y: 149}
+      - {x: -24, y: 141}
+      - {x: -24, y: 129}
+      - {x: -17, y: 116}
+      - {x: 15, y: 116}
+      - {x: 15, y: 132}
+      - {x: -1, y: 149}
+    - - {x: 117, y: 127}
+      - {x: 118, y: 125}
+      - {x: 130, y: 125}
+      - {x: 130, y: 134}
+      - {x: 128, y: 139}
+      - {x: 121, y: 139}
+      - {x: 117, y: 133}
+    - - {x: 29, y: 147}
+      - {x: 24, y: 138}
+      - {x: 24, y: 135}
+      - {x: 33, y: 130}
+      - {x: 50, y: 130}
+      - {x: 56, y: 134}
+      - {x: 56, y: 139}
+      - {x: 51, y: 147}
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
