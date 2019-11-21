@@ -7016,7 +7016,7 @@ MonoBehaviour:
       Political_Campaign: 5
       Child_Slave_Mine: 0
       Building: 0
-  - Description: Debra, your campaign manager scheduled an PR event where you will
+  - Description: Sharel, your campaign manager scheduled an PR event where you will
       be given a chance to give a speach
     A:
       Name: Talk about schools, government, and donating
@@ -7324,23 +7324,246 @@ MonoBehaviour:
       Political_Campaign: 0
       Child_Slave_Mine: 0
       Building: 0
-  - Description: You come across a homeless child on your morning walk
+  - Description: Political campaign wants to put and end to child workers
     A:
-      Name: Offer him a "job" in your mining operation
+      Name: Go along with it
       DeathsCaused: 0
-      Moneyadded: 20
-      Good_Will: -5
-      MCdoogles: 0
+      Moneyadded: -100
+      Good_Will: 5
+      MCdoogles: 5
+      Wrecking_Crew: 0
+      Political_Campaign: 5
+      Child_Slave_Mine: -15
+      Building: 0
+    B:
+      Name: Defend the rights of your child workforce
+      DeathsCaused: 100
+      Moneyadded: 0
+      Good_Will: -10
+      MCdoogles: -5
+      Wrecking_Crew: 5
+      Political_Campaign: -5
+      Child_Slave_Mine: 15
+      Building: 5
+  - Description: Issue of unmotivated minors in the mines
+    A:
+      Name: Let them take a half hour break
+      DeathsCaused: 5
+      Moneyadded: 0
+      Good_Will: 5
+      MCdoogles: 5
       Wrecking_Crew: 0
       Political_Campaign: 0
+      Child_Slave_Mine: -10
+      Building: 0
+    B:
+      Name: Have adult enforcers "Motivate" the sluggish minors
+      DeathsCaused: 250
+      Moneyadded: 500
+      Good_Will: -10
+      MCdoogles: -5
+      Wrecking_Crew: 0
+      Political_Campaign: -5
+      Child_Slave_Mine: 15
+      Building: 0
+  - Description: 'The Machinery used by your builders was destroyed in a worker''s
+      revolt '
+    A:
+      Name: Replace machines with Quality products
+      DeathsCaused: 0
+      Moneyadded: -600
+      Good_Will: 10
+      MCdoogles: 5
+      Wrecking_Crew: 5
+      Political_Campaign: 5
+      Child_Slave_Mine: 0
+      Building: 10
+    B:
+      Name: Have black marketiers bring in illegal chinese construction vehicles
+      DeathsCaused: 300
+      Moneyadded: -100
+      Good_Will: -5
+      MCdoogles: 5
+      Wrecking_Crew: 10
+      Political_Campaign: 0
+      Child_Slave_Mine: 5
+      Building: 5
+  - Description: The price of meat used in McDoogle's chicken has gone up
+    A:
+      Name: Continue to supply the product at your expense
+      DeathsCaused: 0
+      Moneyadded: -300
+      Good_Will: 10
+      MCdoogles: 10
+      Wrecking_Crew: 0
+      Political_Campaign: 5
       Child_Slave_Mine: 5
       Building: 0
     B:
-      Name: Scoff and ignore him
-      DeathsCaused: 1
+      Name: Have your Wreking crew destroy the houses of obese people and use the
+        meat they find their in the chicken products
+      DeathsCaused: 150
       Moneyadded: 0
-      Good_Will: 0
+      Good_Will: -10
+      MCdoogles: 5
+      Wrecking_Crew: 10
+      Political_Campaign: 0
+      Child_Slave_Mine: 5
+      Building: 5
+  - Description: People tie themselves to a tree to protest the removal of a forest
+      you plan to build on
+    A:
+      Name: Capitulate with their demands
+      DeathsCaused: 0
+      Moneyadded: 0
+      Good_Will: 10
       MCdoogles: 0
+      Wrecking_Crew: 0
+      Political_Campaign: 5
+      Child_Slave_Mine: 0
+      Building: -10
+    B:
+      Name: Take them out with the trees
+      DeathsCaused: 150
+      Moneyadded: 0
+      Good_Will: -15
+      MCdoogles: 5
+      Wrecking_Crew: 5
+      Political_Campaign: -5
+      Child_Slave_Mine: 5
+      Building: 10
+  - Description: A meeting is scheduled between you and your rival party's frontrunner
+      at your mansion
+    A:
+      Name: Treat him to a nice meal and talk buisness
+      DeathsCaused: 0
+      Moneyadded: -100
+      Good_Will: 10
+      MCdoogles: 0
+      Wrecking_Crew: 0
+      Political_Campaign: 5
+      Child_Slave_Mine: 0
+      Building: 0
+    B:
+      Name: Show him the shallow graves of his predecessors in your backyard so he
+        knows the folly of running against you
+      DeathsCaused: 25
+      Moneyadded: 0
+      Good_Will: -5
+      MCdoogles: 0
+      Wrecking_Crew: 5
+      Political_Campaign: 10
+      Child_Slave_Mine: 5
+      Building: 5
+  - Description: The manager of a local McDoogle's tries to form a union for better
+      pay
+    A:
+      Name: Offer to meet their demands if they work longer hours
+      DeathsCaused: 0
+      Moneyadded: -100
+      Good_Will: 10
+      MCdoogles: 5
+      Wrecking_Crew: 0
+      Political_Campaign: 5
+      Child_Slave_Mine: 0
+      Building: 0
+    B:
+      Name: Have your private death squad eliminate the leader as an example and use
+        his blood as ketchup
+      DeathsCaused: 5
+      Moneyadded: 100
+      Good_Will: -10
+      MCdoogles: 10
+      Wrecking_Crew: 5
+      Political_Campaign: 0
+      Child_Slave_Mine: 5
+      Building: 0
+  - Description: Power needs to be supplied to your new hotel
+    A:
+      Name: Use orphans from the slave mines on hampster wheels to power it
+      DeathsCaused: 50
+      Moneyadded: 500
+      Good_Will: -5
+      MCdoogles: 10
+      Wrecking_Crew: 5
+      Political_Campaign: -5
+      Child_Slave_Mine: -5
+      Building: 10
+    B:
+      Name: Purchase a plan with the city's power provider
+      DeathsCaused: 0
+      Moneyadded: -500
+      Good_Will: 5
+      MCdoogles: 0
+      Wrecking_Crew: 0
+      Political_Campaign: 5
+      Child_Slave_Mine: 0
+      Building: 5
+  - Description: The issue of homeless people is brought up as a political debate
+      topic
+    A:
+      Name: Talk about giving them jobs in construction
+      DeathsCaused: 25
+      Moneyadded: 100
+      Good_Will: 5
+      MCdoogles: 0
+      Wrecking_Crew: 5
+      Political_Campaign: 10
+      Child_Slave_Mine: 0
+      Building: 5
+    B:
+      Name: Add them to the ranks of child slaves working in your mines, and tell
+        the political opposition you will take care of them
+      DeathsCaused: 100
+      Moneyadded: 500
+      Good_Will: -5
+      MCdoogles: 0
+      Wrecking_Crew: 5
+      Political_Campaign: 5
+      Child_Slave_Mine: 10
+      Building: 0
+  - Description: Jeneffer from marketing says that McDoogle's should come up with
+      a new line of toys
+    A:
+      Name: Make a line of toys based off of a trendy kids movie
+      DeathsCaused: 0
+      Moneyadded: -500
+      Good_Will: 10
+      MCdoogles: 10
+      Wrecking_Crew: 0
+      Political_Campaign: 5
+      Child_Slave_Mine: -5
+      Building: 0
+    B:
+      Name: Make toys that when used give off subliminal messages to the kids telling
+        them to run away to your slave mine
+      DeathsCaused: 50
+      Moneyadded: -100
+      Good_Will: -5
+      MCdoogles: 10
+      Wrecking_Crew: 5
+      Political_Campaign: -5
+      Child_Slave_Mine: 10
+      Building: 0
+  - Description: Darleene, the head fry cook for McDoogle's suggests using a focus
+      group of kids to improve food quality
+    A:
+      Name: Offer to free kids from your mine if they cooperate with the survey
+      DeathsCaused: 0
+      Moneyadded: 500
+      Good_Will: -5
+      MCdoogles: 15
+      Wrecking_Crew: 0
+      Political_Campaign: 0
+      Child_Slave_Mine: -5
+      Building: 0
+    B:
+      Name: Offer to free kids from your mine if they cooperate with the survey, but
+        dont actually
+      DeathsCaused: 25
+      Moneyadded: 0
+      Good_Will: -5
+      MCdoogles: 15
       Wrecking_Crew: 0
       Political_Campaign: 0
       Child_Slave_Mine: 0
