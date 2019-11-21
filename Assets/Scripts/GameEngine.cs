@@ -100,10 +100,10 @@ public class GameEngine : MonoBehaviour
     }
     public void Deathtoll()
     {
-        while(death_mirror >= 100)
+        while(death_mirror >= 150)
         {
-            Money += 50;
-            GoodWill -= 10;
+            Money += 20;
+            GoodWill -= 5;
             death_mirror -= 100;
         }
     }
