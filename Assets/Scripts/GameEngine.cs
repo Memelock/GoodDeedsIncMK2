@@ -26,7 +26,7 @@ public class GameEngine : MonoBehaviour
 {
     [SerializeField] List<Dessition> dessitions = new List<Dessition>();
     [SerializeField] List<GoodWillOptions> GWO = new List<GoodWillOptions>();
-    public long Money, Deaths;
+    public long Money, Deaths, death_mirror;
     public int GoodWill, Turn_Count, Starting_Money, Starting_Goodwill, Turn_Change, IndaBank;
     public bool DidI_Withdraw = false;
     public int roulet_spins = 0;
@@ -39,12 +39,14 @@ public class GameEngine : MonoBehaviour
     public int MCDoogles_Total, WreckingCrew_Total, PoliticalCampaign_Total, Child_Slave_Mine_Total, Building_Total;
     public Slider com, com1, com2, com3, com4;
     int past;
+    public Appcontroller Phil;
     public GameObject Good_Boi_Selected, Good_Boi_Selected2, Good_Boi_Selected3;
     // Start is called before the first frame update
     void Start()
     {
         New();
         GoodWillReroll();
+        death_mirror = 0;
         com.maxValue = 100;
         com1.maxValue = 100;
         com2.maxValue = 100;
@@ -71,6 +73,7 @@ public class GameEngine : MonoBehaviour
         com3.maxValue = 100;
         com4.maxValue = 100;
         Deaths = 0;
+        death_mirror = 0;
         IndaBank = 0;
         Money = Starting_Money;
         GoodWill = Starting_Goodwill;
@@ -95,7 +98,15 @@ public class GameEngine : MonoBehaviour
 
         return r;
     }
-
+    public void Deathtoll()
+    {
+        while(death_mirror >= 150)
+        {
+            IndaBank += 20;
+            GoodWill -= 5;
+            death_mirror -= 150;
+        }
+    }
     public void New()
     {
         Current = dessitions[Rand_Des()];
@@ -128,17 +139,17 @@ public class GameEngine : MonoBehaviour
         }
         if (GoodWill >= 41 && GoodWill < 61)
         {
-            pub.text = "The Public thinks your alright.";
+            pub.text = "The Public thinks you're alright.";
 
         }
         if (GoodWill >= 61 && GoodWill < 81)
         {
-            pub.text = "The Public thinks your cool.";
+            pub.text = "The Public thinks you're cool.";
 
         }
         if (GoodWill >= 81 && GoodWill <= 100)
         {
-            pub.text = "The Public thinks your Great!";
+            pub.text = "The Public thinks you're Great!";
 
         }
     }
@@ -206,6 +217,7 @@ public class GameEngine : MonoBehaviour
             Money += Current.A.Moneyadded;
             GoodWill += Current.A.Good_Will;
             Deaths += Current.A.DeathsCaused;
+            death_mirror += Current.A.DeathsCaused;
             MCDoogles_Total += Current.A.MCdoogles;
             WreckingCrew_Total += Current.A.Wrecking_Crew;
             PoliticalCampaign_Total += Current.A.Political_Campaign;
@@ -217,6 +229,7 @@ public class GameEngine : MonoBehaviour
             GoodWill += Current.B.Good_Will;
             Money += Current.B.Moneyadded;
             Deaths += Current.B.DeathsCaused;
+            death_mirror += Current.B.DeathsCaused;
             MCDoogles_Total += Current.B.MCdoogles;
             WreckingCrew_Total += Current.B.Wrecking_Crew;
             PoliticalCampaign_Total += Current.B.Political_Campaign;
@@ -267,9 +280,12 @@ public class GameEngine : MonoBehaviour
             Turn_Count++;
         }
     }
-
     public void scalerizer()
     {
+        if (Money < 0)
+        {
+            Money = 0;
+        }
         if (MCDoogles_Total > 100)
         {
             MCDoogles_Total = 100;
@@ -294,6 +310,10 @@ public class GameEngine : MonoBehaviour
         {
             GoodWill = 100;
         }
+        if (GoodWill < 0)
+        {
+            GoodWill = 0;
+        }
         if (MCDoogles_Total < 0)
         {
             MCDoogles_Total = 0;
@@ -317,23 +337,23 @@ public class GameEngine : MonoBehaviour
     }
     public void loseMoney()
     {
-
+        Phil.Open(10);
     }
     public void loseWill()
     {
-
+        Phil.Open(11);
     }
     public void losewillandmoney()
     {
-
+        Phil.Open(12);
     }
     public void losecoward()
     {
-
+        Phil.Open(14);
     }
     public void WinnerWinner()
     {
-
+        Phil.Open(13);
     }
     public void WinDetector()
     {
@@ -349,35 +369,28 @@ public class GameEngine : MonoBehaviour
         {
             loseWill();
         }
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            losecoward();
+        }
         if (Turn_Count == 25)
         {
             WinnerWinner();
         }
     }
-
-    //public void endgame()
-    //{
-    //    Appcontroller.Open
-    //}
-
     // Update is called once per frame
     void Update()
     {
-        //if(Turn_Count == 25)
-        //{
-        //    endgame();
-        //}
         scalerizer();
         GoodWillOmeter();
         Passive_Income();
         WinDetector();
+        Deathtoll();
         com.value = MCDoogles_Total;
         com1.value = WreckingCrew_Total;
         com2.value = PoliticalCampaign_Total;
         com3.value = Child_Slave_Mine_Total;
         com4.value = Building_Total;
-      
-
         if (Input.GetKeyDown(KeyCode.R)) {
             Reset();
         }
@@ -386,37 +399,16 @@ public class GameEngine : MonoBehaviour
             Application.Quit();
         }
         describtion.text = Current.Description;
-        GW1.text = GoodWillCurent1.Name ;
-        GW2.text = GoodWillCurent2.Name;
-        GW3.text = GoodWillCurent3.Name;
-        optiona.text = Current.A.Name +" $ " + Current.A.Moneyadded;
-        optionb.text = Current.B.Name + " $ " + Current.B.Moneyadded;
+        GW1.text = GoodWillCurent1.Name + " $" + GoodWillCurent1.Cost;
+        GW2.text = GoodWillCurent2.Name + " $" + GoodWillCurent2.Cost;
+        GW3.text = GoodWillCurent3.Name + " $" + GoodWillCurent3.Cost;
+        optiona.text = Current.A.Name;
+        optionb.text = Current.B.Name;
         roulet.text = "PR Research $" + Roulet_Cost();
         Bank_Cash.text = IndaBank.ToString();
         Money_Display.text = Money.ToString();
         Death_Text.text = Deaths.ToString();
-        Turn_Display.text = Turn_Count.ToString();
-        //if(GoodWill > 100)
-        //{
-        //    GoodWill = 100;
-        //}
-        //GoodWill_Display.text = GoodWill.ToString();
-        //if(Turn_Count == 25)
-        //{
-        //    if(GoodWill <= 20 && Money <= 500)
-        //    {
-
-        //    }
-        //    if(GoodWill > 20)
-        //    {
-
-        //    }
-        //    if(Money > 500)
-        //    {
-
-        //    }
-        //}
-
+        Turn_Display.text = "Day " + Turn_Count.ToString();
     }
     public void Roulet_detecter()
     {
